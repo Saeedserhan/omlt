@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<!-- saved from url=(0135)file:///C:/Users/shxh2/AppData/Local/Packages/CLAUDE~1/LOCALC~1/Roaming/Claude/LOCAL-~1/9CC18D~1/0CEDF8~1/LOED94~1/outputs/OMLT-M~1.HTM -->
-<html lang="ar" dir="rtl" style="scroll-behavior: smooth;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>OMLT — Master Archive · V 2.0</title>
-<meta name="description" content="OMLT — Master Archive. Brand, business and identity. Abha, Saudi Arabia.">
+<meta name="description" content="OMLT — Master Archive. Brand, business and identity. Abha, Saudi Arabia." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./OMLT-Master-Presentation_files/css2" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;500;700;900&family=Space+Grotesk:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 :root{
@@ -23,31 +23,21 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--paper);color:var(--ink);font-family:var(--ar);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 body{padding:0;min-height:100vh}
-
-/* ───── EDITORIAL FLOW (continuous, no slide cards) ───── */
 .deck{display:block}
-.page{
-  width:100%;height:auto;min-height:auto;
-  background:var(--paper);color:var(--ink);
+.page{width:100%;height:auto;background:var(--paper);color:var(--ink);
   position:relative;overflow:visible;
   padding:140px max(72px, calc((100vw - var(--frame)) / 2));
   display:flex;flex-direction:column;
-  page-break-after:always;break-after:page;
-}
+  page-break-after:always;break-after:page}
 .page.dark{background:var(--navy);color:var(--cream)}
 .page.terra{background:var(--terra);color:var(--cream)}
 .page.cream{background:var(--cream);color:var(--navy)}
-.page + .page::before{
-  content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
-  width:min(calc(100vw - 144px), var(--frame));height:1px;background:var(--hair);
-}
+.page + .page::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:min(calc(100vw - 144px), var(--frame));height:1px;background:var(--hair)}
 .page.dark::before,.page.terra::before,.page.cream::before,
 .page.dark + .page::before,.page.terra + .page::before,.page.cream + .page::before{display:none}
-
-/* page chrome */
 .head{display:flex;align-items:baseline;justify-content:space-between;
-  font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;
-  opacity:0.62;margin-bottom:48px}
+  font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;opacity:0.62;margin-bottom:48px}
 .head .num{font-weight:600;color:var(--terra)}
 .page.dark .head .num,.page.terra .head .num{color:var(--yolk)}
 .head .ar{font-family:var(--ar);font-size:11px;letter-spacing:0;margin-inline-start:10px;opacity:0.75}
@@ -55,8 +45,6 @@ body{padding:0;min-height:100vh}
   display:flex;justify-content:space-between;align-items:center;
   font-family:var(--mono);font-size:10px;letter-spacing:0.32em;text-transform:uppercase;opacity:0.5}
 .page.dark .foot,.page.terra .foot{border-top-color:rgba(246,236,214,0.14)}
-
-/* type */
 .kicker{font-family:var(--mono);font-size:11px;letter-spacing:0.42em;text-transform:uppercase;color:var(--terra);font-weight:600}
 .page.dark .kicker,.page.terra .kicker{color:var(--yolk)}
 .h-display{font-family:var(--serif);font-weight:900;font-size:96px;line-height:0.95;letter-spacing:-0.02em}
@@ -71,8 +59,6 @@ em{font-style:italic;color:var(--terra)}
 .page.dark em,.page.terra em{color:var(--yolk);font-style:italic}
 .rule-tiny{width:34px;height:2px;background:var(--terra);display:block}
 .page.dark .rule-tiny,.page.terra .rule-tiny{background:var(--yolk)}
-
-/* layouts */
 .grid{display:grid;gap:32px}
 .g-12-6{grid-template-columns:1fr 1fr}
 .g-12-5-7{grid-template-columns:5fr 7fr}
@@ -82,21 +68,14 @@ em{font-style:italic;color:var(--terra)}
 .g-2{grid-template-columns:repeat(2,1fr)}
 .col{display:flex;flex-direction:column}
 .center{display:flex;align-items:center;justify-content:center}
-.stack-tight>*+*{margin-top:8px}
 .stack>*+*{margin-top:16px}
 .stack-lg>*+*{margin-top:28px}
-
-/* ───── COVER — editorial · light · type-led · brand-book direction ───── */
 .cover{padding:0;min-height:100vh;
-  background:
-    radial-gradient(75% 55% at 50% 30%, rgba(230,165,50,0.10), transparent 70%),
+  background:radial-gradient(75% 55% at 50% 30%, rgba(230,165,50,0.10), transparent 70%),
     radial-gradient(70% 50% at 50% 92%, rgba(200,68,44,0.08), transparent 65%),
-    linear-gradient(180deg,#FBF6EA 0%,#F2E9CF 100%);
-}
+    linear-gradient(180deg,#FBF6EA 0%,#F2E9CF 100%)}
 .cover-grain{position:absolute;inset:0;opacity:0.04;background-image:radial-gradient(rgba(27,34,53,0.45) 1px, transparent 1px);background-size:3px 3px;mix-blend-mode:multiply;pointer-events:none}
-.cover-inner{position:relative;z-index:2;min-height:100vh;
-  display:grid;grid-template-rows:auto 1fr auto;color:var(--navy);
-  padding:72px max(72px, calc((100vw - var(--frame)) / 2))}
+.cover-inner{position:relative;z-index:2;min-height:100vh;display:grid;grid-template-rows:auto 1fr auto;color:var(--navy);padding:72px max(72px, calc((100vw - var(--frame)) / 2))}
 .cover-top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;letter-spacing:0.42em;text-transform:uppercase;color:rgba(27,34,53,0.6)}
 .cover-main{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center;padding:0 24px}
 .cover-wordmark{font-family:var(--serif);font-weight:900;font-size:260px;line-height:0.88;letter-spacing:-0.035em;color:var(--navy)}
@@ -109,30 +88,23 @@ em{font-style:italic;color:var(--terra)}
 .cover-ar{font-family:var(--ar);font-size:24px;font-weight:700;color:var(--navy)}
 .cover-sub{font-family:var(--ar);font-size:13.5px;line-height:1.9;color:rgba(27,34,53,0.65);max-width:48ch;margin-top:4px}
 .cover-bottom{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:10px;letter-spacing:0.42em;text-transform:uppercase;color:rgba(27,34,53,0.55)}
-
-/* TOC */
 .toc{list-style:none;display:flex;flex-direction:column;gap:6px}
 .toc li{display:grid;grid-template-columns:54px 1fr 60px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--hair)}
 .toc .n{font-family:var(--mono);font-size:12px;letter-spacing:0.28em;color:var(--terra);font-weight:600}
 .toc .t{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--ink)}
 .toc .t .ar{font-family:var(--ar);font-size:13px;color:rgba(15,20,34,0.55);margin-inline-start:10px;font-weight:500}
 .toc .p{font-family:var(--mono);font-size:11px;letter-spacing:0.24em;opacity:0.5;text-align:end}
-
-/* cards */
 .card{background:#fff;border:1px solid var(--hair);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:10px}
 .page.dark .card{background:rgba(246,236,214,0.04);border-color:rgba(246,236,214,0.14)}
-.page.terra .card{background:rgba(27,34,53,0.10);border-color:rgba(246,236,214,0.25);color:var(--cream)}
 .card .num{font-family:var(--mono);font-size:10px;letter-spacing:0.32em;color:var(--terra);font-weight:600}
-.page.dark .card .num,.page.terra .card .num{color:var(--yolk)}
+.page.dark .card .num{color:var(--yolk)}
 .card h4{font-family:var(--serif);font-weight:700;font-size:19px;line-height:1.2}
 .card p{font-family:var(--ar);font-size:13.5px;line-height:1.75;opacity:0.78}
 .card .ic-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}
 .card .ic{width:40px;height:40px;border-radius:50%;background:rgba(200,68,44,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .page.dark .card .ic{background:rgba(230,165,50,0.12)}
 .card .ic svg{width:22px;height:22px;stroke:var(--terra);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
-.page.dark .card .ic svg,.page.terra .card .ic svg{stroke:var(--yolk)}
-
-/* tables */
+.page.dark .card .ic svg{stroke:var(--yolk)}
 .tbl{width:100%;border-collapse:collapse;font-family:var(--ar);font-size:14px}
 .tbl th,.tbl td{padding:14px 16px;text-align:start;border-bottom:1px solid var(--hair);vertical-align:top}
 .tbl thead th{font-family:var(--mono);font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--terra);font-weight:600;padding-bottom:18px}
@@ -142,28 +114,19 @@ em{font-style:italic;color:var(--terra)}
 .tbl .sar{font-family:var(--mono);font-weight:600;color:var(--navy);text-align:end;white-space:nowrap}
 .tbl tfoot td{font-weight:800;color:var(--terra);border-top:2px solid var(--navy);border-bottom:0;padding-top:18px;font-size:15px}
 .tbl tfoot .sar{color:var(--terra)}
-
-/* palette swatch */
 .swatch{aspect-ratio:1/1.15;border-radius:10px;display:flex;flex-direction:column;justify-content:space-between;padding:18px;border:1px solid var(--hair)}
 .swatch .ratio{font-family:var(--mono);font-size:24px;font-weight:700}
 .swatch .meta{font-family:var(--mono);font-size:10px;letter-spacing:0.28em;text-transform:uppercase}
 .swatch .nm{font-family:var(--serif);font-weight:700;font-size:18px;margin-top:6px}
-
-/* mark hero (light, editorial) */
 .logo-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:72px;align-items:center}
 .logo-hero .stage{aspect-ratio:1/1;background:radial-gradient(circle at 50% 38%, rgba(230,165,50,0.12), transparent 65%), var(--paper);border-radius:14px;display:flex;align-items:center;justify-content:center;padding:64px;position:relative;border:1px solid var(--hair)}
 .logo-hero .stage::before{content:"";position:absolute;inset:24px;border:1px solid rgba(27,34,53,0.10);border-radius:10px}
-.logo-hero .stage::after{content:"";position:absolute;inset:44px;border:1px dashed rgba(27,34,53,0.06);border-radius:6px}
 .logo-hero .stage img{width:78%;height:auto;filter:drop-shadow(0 28px 50px rgba(27,34,53,0.18))}
-
-/* anatomy */
 .anatomy{display:grid;grid-template-columns:1fr 1fr;gap:32px}
 .anatomy .stage-lg{background:var(--cream);border-radius:14px;display:flex;align-items:center;justify-content:center;position:relative;padding:32px;min-height:380px}
 .anatomy .stage-lg img{width:78%;height:auto}
 .anno{position:absolute;font-family:var(--mono);font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--navy);background:#fff;padding:6px 10px;border-radius:999px;border:1px solid var(--hair);white-space:nowrap}
 .anno .b{color:var(--terra);font-weight:700;margin-inline-end:6px}
-
-/* specimen */
 .specimen{padding:24px 0;border-top:1px solid var(--hair)}
 .specimen:first-child{border-top:0;padding-top:0}
 .specimen .name{font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;color:var(--terra);font-weight:600}
@@ -171,8 +134,6 @@ em{font-style:italic;color:var(--terra)}
 .specimen .big-grotesk{font-family:var(--mono);font-weight:600;font-size:64px;line-height:1.0;color:var(--navy)}
 .specimen .big-ar{font-family:var(--ar);font-weight:800;font-size:78px;line-height:1.1;color:var(--navy)}
 .specimen .meta{font-family:var(--ar);font-size:13px;color:rgba(15,20,34,0.62);margin-top:10px;line-height:1.8}
-
-/* pillars */
 .pillar{display:flex;flex-direction:column;gap:8px;padding:22px;background:#fff;border:1px solid var(--hair);border-radius:12px}
 .page.dark .pillar{background:rgba(246,236,214,0.04);border-color:rgba(246,236,214,0.14)}
 .pillar .ic{width:40px;height:40px;border-radius:50%;background:var(--terra);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;font-weight:700}
@@ -180,22 +141,16 @@ em{font-style:italic;color:var(--terra)}
 .page.dark .pillar h5{color:var(--cream)}
 .pillar p{font-family:var(--ar);font-size:13px;line-height:1.75;color:rgba(15,20,34,0.74)}
 .page.dark .pillar p{color:rgba(246,236,214,0.74)}
-
-/* logo do/don't board */
 .lr-cell{display:flex;flex-direction:column;background:#fff;border:1px solid var(--hair);border-radius:10px;overflow:hidden}
 .lr-cell .demo{height:108px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .lr-cell .demo img{max-width:78%;max-height:80%;display:block}
 .lr-cell .cap{padding:10px 12px;display:flex;align-items:center;gap:8px;border-top:1px solid var(--hair)}
 .lr-cell .mark{font-family:var(--mono);font-weight:700;font-size:14px;width:18px;text-align:center}
-.lr-cell.ok .mark{color:var(--herb)}
-.lr-cell.no .mark{color:var(--deep)}
+.lr-cell.ok .mark{color:var(--herb)}.lr-cell.no .mark{color:var(--deep)}
 .lr-cell .lbl{font-family:var(--mono);font-size:9.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--navy);font-weight:600;line-height:1.3}
 .lr-cell .lbl small{display:block;font-family:var(--ar);font-size:10px;color:rgba(15,20,34,0.55);letter-spacing:0;font-weight:500;text-transform:none;margin-top:2px}
 .lr-section{font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;font-weight:700;margin:6px 0 8px}
-.lr-section.ok{color:var(--herb)}
-.lr-section.no{color:var(--deep)}
-
-/* icons & pattern */
+.lr-section.ok{color:var(--herb)}.lr-section.no{color:var(--deep)}
 .icon-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:14px}
 .icn-cell{aspect-ratio:1/1;border:1px solid var(--hair);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:10px;background:#fff}
 .icn-cell svg{width:32px;height:32px;stroke:var(--navy);stroke-width:1.6;fill:none;stroke-linecap:round;stroke-linejoin:round}
@@ -203,84 +158,71 @@ em{font-style:italic;color:var(--terra)}
 .pat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
 .pat{display:flex;flex-direction:column;gap:8px}
 .pat-canvas{aspect-ratio:16/9;border-radius:10px;border:1px solid var(--hair);background:var(--cream)}
-.pat-egg{background:var(--cream) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60'><circle cx='30' cy='30' r='12' fill='none' stroke='%231B2235' stroke-width='1.2'/><circle cx='30' cy='30' r='4' fill='%23E6A532'/></svg>")}
 .pat-arc{background:var(--terra);position:relative;overflow:hidden}
 .pat-arc::before,.pat-arc::after{content:"";position:absolute;border:2px solid var(--cream);border-radius:50%;opacity:0.5}
 .pat-arc::before{inset:-20% -10% auto auto;width:120%;aspect-ratio:1/1}
 .pat-arc::after{inset:30% -30% auto auto;width:80%;aspect-ratio:1/1;border-color:var(--yolk);opacity:0.6}
 .pat-stripe{background:repeating-linear-gradient(45deg,var(--terra) 0 20px,var(--cream) 20px 38px,var(--navy) 38px 56px)}
 .pat-cap{font-family:var(--mono);font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--navy);opacity:0.62;font-weight:600}
-
-/* applications grid */
 .app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .app{display:flex;flex-direction:column;gap:10px}
 .app .canvas{aspect-ratio:4/3;border-radius:12px;border:1px solid var(--hair);display:flex;align-items:center;justify-content:center;padding:18px;overflow:hidden;position:relative}
 .app .cap{font-family:var(--mono);font-size:10px;letter-spacing:0.28em;text-transform:uppercase;color:var(--navy);opacity:0.66;font-weight:600}
-
-/* signage */
 .sign{aspect-ratio:5/4;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--cream);position:relative;border:1px solid var(--hair)}
-.sign.terra{background:var(--terra)}
-.sign.navy{background:var(--navy)}
-.sign.cream{background:var(--cream);color:var(--navy)}
+.sign.terra{background:var(--terra)}.sign.navy{background:var(--navy)}.sign.cream{background:var(--cream);color:var(--navy)}
 .sign img{width:48%;max-width:140px;height:auto}
-
-/* digital mock */
 .device{border-radius:18px;border:1px solid var(--hair);background:#fff;overflow:hidden;display:flex;flex-direction:column}
 .device .bar{height:24px;background:linear-gradient(180deg,#f3eddb,#e8e0c5);display:flex;align-items:center;gap:6px;padding:0 12px}
 .device .bar span{width:8px;height:8px;border-radius:50%;background:rgba(27,34,53,0.25)}
 .device .scr{flex:1;background:var(--paper);padding:22px;display:flex;flex-direction:column;gap:10px}
 .device .scr h5{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy)}
 .device .scr p{font-family:var(--ar);font-size:12px;color:rgba(15,20,34,0.68);line-height:1.75}
-
-/* apparel mock */
 .apparel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .apparel{aspect-ratio:4/5;border-radius:12px;border:1px solid var(--hair);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .apparel.tee{background:linear-gradient(180deg,#F6ECD6,#E8DDBE)}
 .apparel.cap{background:linear-gradient(180deg,#C8442C,#9C3520);color:var(--cream)}
 .apparel.apron{background:linear-gradient(180deg,#1B2235,#0F1422);color:var(--cream)}
-.apparel .label{position:absolute;bottom:14px;left:14px}
-
-/* manifesto */
 .manifesto-block{display:grid;grid-template-columns:1fr;gap:36px}
-.manifesto-quote{font-family:var(--serif);font-weight:500;font-size:64px;line-height:1.18;color:var(--cream);max-width:24ch;letter-spacing:-0.012em}
+.manifesto-quote{font-family:var(--serif);font-weight:500;font-size:60px;line-height:1.18;color:var(--cream);max-width:24ch;letter-spacing:-0.012em}
 .manifesto-quote em{font-style:italic;color:var(--yolk);font-weight:700}
-.manifesto-mark{font-family:var(--serif);font-size:200px;line-height:0.5;color:rgba(230,165,50,0.32);height:80px}
+.manifesto-mark{font-family:var(--serif);font-size:180px;line-height:0.5;color:rgba(230,165,50,0.32);height:80px}
 .vow{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:start;margin-top:28px}
-
-/* closing */
 .closing{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:24px;min-height:60vh}
-.closing-mark{width:160px;height:160px;display:flex;align-items:center;justify-content:center}
+.closing-mark{width:160px;height:160px}
 .closing-mark img{width:100%;height:auto;filter:drop-shadow(0 20px 50px rgba(0,0,0,0.45))}
-
-/* toolbar */
-.toolbar{position:fixed;top:18px;right:18px;z-index:100;display:flex;gap:8px;
-  background:rgba(27,34,53,0.92);color:var(--cream);padding:10px 14px;border-radius:999px;
-  font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
-  box-shadow:0 10px 30px rgba(0,0,0,0.4);backdrop-filter:blur(8px)}
-.toolbar button{background:var(--yolk);color:var(--navy);border:0;padding:8px 14px;border-radius:999px;
-  font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;cursor:pointer}
+/* floor plan */
+.fp-board{position:relative;padding:48px 56px;background:linear-gradient(180deg,#F6F0E8 0%,#EFE6D2 100%);border:1px solid var(--hair);border-radius:14px;overflow:hidden}
+.fp-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(27,34,53,0.045) 1px, transparent 1px),linear-gradient(90deg, rgba(27,34,53,0.045) 1px, transparent 1px);background-size:32px 32px;pointer-events:none;mix-blend-mode:multiply}
+.fp-corner{position:absolute;width:48px;height:48px;border:1.5px solid var(--terra);opacity:0.85}
+.fp-corner.tl{top:18px;left:18px;border-right:0;border-bottom:0}
+.fp-corner.tr{top:18px;right:18px;border-left:0;border-bottom:0}
+.fp-corner.bl{bottom:18px;left:18px;border-right:0;border-top:0}
+.fp-corner.br{bottom:18px;right:18px;border-left:0;border-top:0}
+.fp-frame{position:relative;background:#FFFDF7;border:1px solid rgba(27,34,53,0.18);border-radius:10px;padding:32px;box-shadow:0 24px 60px -22px rgba(27,34,53,0.18), 0 6px 20px rgba(27,34,53,0.06)}
+.fp-frame img{display:block;width:100%;height:auto;border-radius:6px}
+.fp-meta-row{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:16px;border-top:1px solid rgba(27,34,53,0.10);font-family:var(--mono);font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(27,34,53,0.55);font-weight:600;flex-wrap:wrap;gap:8px}
+.fp-meta-row .scale{display:flex;align-items:center;gap:10px}
+.fp-meta-row .scale-bar{width:80px;height:4px;background:linear-gradient(90deg,var(--terra) 0 25%,transparent 25% 27%,var(--terra) 27% 52%,transparent 52% 54%,var(--terra) 54% 79%,transparent 79% 81%,var(--terra) 81% 100%)}
+.fp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:24px}
+.fp-stat{padding:18px;border:1px solid var(--hair);border-radius:10px;background:rgba(255,253,247,0.6)}
+.fp-stat .k{font-family:var(--mono);font-size:9.5px;letter-spacing:0.32em;text-transform:uppercase;color:var(--terra);font-weight:700}
+.fp-stat .v{font-family:var(--serif);font-weight:900;font-size:28px;color:var(--navy);line-height:1;margin-top:6px}
+.fp-stat .s{font-family:var(--ar);font-size:11px;color:rgba(27,34,53,0.65);margin-top:4px;line-height:1.7}
+.toolbar{position:fixed;top:18px;right:18px;z-index:100;display:flex;gap:8px;background:rgba(27,34,53,0.92);color:var(--cream);padding:10px 14px;border-radius:999px;font-family:var(--mono);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;box-shadow:0 10px 30px rgba(0,0,0,0.4);backdrop-filter:blur(8px)}
+.toolbar button{background:var(--yolk);color:var(--navy);border:0;padding:8px 14px;border-radius:999px;font-family:var(--mono);font-weight:700;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;cursor:pointer}
 .toolbar .pill{padding:8px 12px;border:1px solid rgba(246,236,214,0.3);border-radius:999px;opacity:0.8}
-
-/* responsive */
 @media (max-width:900px){
-  .page{padding:90px 28px}
-  .cover{padding:0}.cover-inner{padding:48px 28px}
+  .page{padding:90px 28px}.cover{padding:0}.cover-inner{padding:48px 28px}
   .cover-main{grid-template-columns:1fr;gap:40px}.cover-right{border-inline-start:0;padding-inline-start:0;border-top:1px solid rgba(27,34,53,0.18);padding-top:24px}
-  .cover-wordmark{font-size:140px}
-  .cover-title{font-size:48px !important}
+  .cover-wordmark{font-size:140px}.cover-title{font-size:48px !important}
   .h-display{font-size:56px !important}.h-1{font-size:40px !important}.h-2{font-size:28px !important}
   .grid.g-12-6,.grid.g-12-5-7,.grid.g-12-7-5,.grid.g-3,.grid.g-4,.grid.g-2,.logo-hero,.anatomy,.app-grid,.apparel-grid{grid-template-columns:1fr !important}
   .icon-grid{grid-template-columns:repeat(4,1fr)}
 }
-
-/* print/pdf */
 @media print{
-  html,body{background:#fff !important}
-  body{padding:0}.toolbar{display:none}.deck{display:block}
+  html,body{background:#fff !important}body{padding:0}.toolbar{display:none}.deck{display:block}
   .page{width:100%;min-height:100vh;padding:48px 56px;page-break-after:always;break-after:page;break-inside:avoid}
-  .page::before{display:none !important}
-  .cover{min-height:100vh}.cover-inner{min-height:100vh;padding:48px 64px}
-  .foot{margin-top:auto;padding-top:18px}
+  .page::before{display:none !important}.cover{min-height:100vh}.cover-inner{min-height:100vh;padding:48px 64px}.foot{margin-top:auto;padding-top:18px}
 }
 @page{size:A4 landscape;margin:0}
 </style>
@@ -294,14 +236,10 @@ em{font-style:italic;color:var(--terra)}
 
 <main class="deck">
 
-<!-- ═════════════════ 01 · COVER ═════════════════ -->
 <section class="page cover">
   <div class="cover-grain"></div>
   <div class="cover-inner">
-    <div class="cover-top">
-      <span>OMLT · Master Archive · V 2.0</span>
-      <span>Abha · KSA</span>
-    </div>
+    <div class="cover-top"><span>OMLT · Master Archive · V 2.0</span><span>Abha · KSA</span></div>
     <div class="cover-main">
       <div class="cover-wordmark">OMLT<span class="dot">.</span></div>
       <div class="cover-right">
@@ -312,18 +250,13 @@ em{font-style:italic;color:var(--terra)}
         <p class="cover-sub">دليل الهوية والمشروع لعلامة OMLT — مطبخ فطور قصير الذاكرة، طويل الأثر. نظام كامل من البيان إلى لافتة المتجر.</p>
       </div>
     </div>
-    <div class="cover-bottom">
-      <span>OMLT · BREAKFAST KITCHEN</span>
-      <span>VOL.02 · EDITORIAL EDITION</span>
-      <span>001 / 034</span>
-    </div>
+    <div class="cover-bottom"><span>OMLT · BREAKFAST KITCHEN</span><span>VOL.02 · EDITORIAL EDITION</span><span>001 / 034</span></div>
   </div>
 </section>
 
-<!-- ═════════════════ 02 · CONTENTS ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">II</span><span>Contents · الفهرس</span><span>002 / 034</span></header>
-  <div class="grid g-12-5-7" style="flex:1">
+  <div class="grid g-12-5-7">
     <div class="col" style="gap:18px">
       <span class="kicker">The map · Eight chapters</span>
       <h2 class="h-1">Eight<br>chapters,<br><em>one egg.</em></h2>
@@ -345,18 +278,13 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CONTENTS</span><span>002 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 03 · FOUNDATION · MANIFESTO ═════════════════ -->
 <section class="page dark">
   <header class="head"><span class="num">01</span><span>Foundation · Manifesto <span class="ar">البيان</span></span><span>003 / 034</span></header>
   <div class="manifesto-block">
     <div class="manifesto-mark">"</div>
     <h2 class="manifesto-quote">نؤمن بأنّ <em>أبسط طبق</em><br>يستحقّ أعلى عناية.<br>البيضة لا تحتاج عشرة مكوّنات،<br>تحتاج <em>دقيقتين من الحضور</em>.</h2>
     <div class="vow">
-      <div>
-        <span class="kicker">The OMLT vow</span>
-        <p class="lead" style="margin-top:14px">نخدم وصفات قليلة، نفعلها بشكل صحيح، ونبقى على نفس الموقف كل صباح.</p>
-        <p style="font-family:var(--serif);font-style:italic;color:var(--yolk);font-size:18px;margin-top:10px">We serve few recipes, do them right, and hold the same stance every morning.</p>
-      </div>
+      <div><span class="kicker">The OMLT vow</span><p class="lead" style="margin-top:14px">نخدم وصفات قليلة، نفعلها بشكل صحيح، ونبقى على نفس الموقف كل صباح.</p><p style="font-family:var(--serif);font-style:italic;color:var(--yolk);font-size:18px;margin-top:10px">We serve few recipes, do them right, hold the same stance every morning.</p></div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
         <div style="border:1px solid rgba(246,236,214,0.22);border-radius:12px;padding:18px"><span class="kicker">Hold</span><div style="font-family:var(--serif);font-size:22px;font-weight:900;color:var(--cream);margin-top:6px">Few recipes</div></div>
         <div style="border:1px solid rgba(246,236,214,0.22);border-radius:12px;padding:18px"><span class="kicker">Repeat</span><div style="font-family:var(--serif);font-size:22px;font-weight:900;color:var(--cream);margin-top:6px">Every morning</div></div>
@@ -366,7 +294,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 01 · FOUNDATION</span><span>003 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 04 · CONCEPT · DEFINITION (no logo) ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">02</span><span>Concept · Definition <span class="ar">تعريف المشروع</span></span><span>004 / 034</span></header>
   <div class="grid g-12-7-5" style="align-items:center">
@@ -389,25 +316,20 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 02 · CONCEPT</span><span>004 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 05 · CONCEPT · OPERATIONAL ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">02</span><span>Concept · Operational characteristics <span class="ar">الخصائص التشغيلية</span></span><span>005 / 034</span></header>
-  <div class="stack" style="margin-bottom:28px">
-    <span class="kicker">How it operates</span>
-    <h2 class="h-2">قائمة قصيرة <em>·</em> إيقاع صباحي ثابت <em>·</em> مطبخ مفتوح.</h2>
-  </div>
+  <div class="stack" style="margin-bottom:28px"><span class="kicker">How it operates</span><h2 class="h-2">قائمة قصيرة <em>·</em> إيقاع صباحي ثابت <em>·</em> مطبخ مفتوح.</h2></div>
   <div class="grid g-3">
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><line x1="5" y1="7" x2="19" y2="7"></line><line x1="5" y1="12" x2="14" y2="12"></line><line x1="5" y1="17" x2="17" y2="17"></line></svg></span><span class="num">01 · Menu</span></div><h4>قائمة مختصرة</h4><p>من ٥ إلى ٧ أصناف أساسية — تركيز على الإتقان لا التوسعة.</p></div>
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><polyline points="12,7 12,12 16,14"></polyline></svg></span><span class="num">02 · Hours</span></div><h4>تشغيل صباحي محدّد</h4><p>يفتح المطبخ ٧:٠٠ ص ويُغلق ٣:٠٠ م — لا برانش، لا عشاء.</p></div>
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><polyline points="3,12 6,12 8,7 12,17 14,9 17,12 21,12"></polyline></svg></span><span class="num">03 · Rhythm</span></div><h4>إيقاع ثابت</h4><p>نفس الإيقاع، نفس الجودة، طوال أيام العمل الستة.</p></div>
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4"></circle><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"></circle></svg></span><span class="num">04 · Focus</span></div><h4>تجربة فطور فقط</h4><p>تجربة داخلية مركّزة — لا تتشتّت بين أوقات وأطعمة مختلفة.</p></div>
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><ellipse cx="11" cy="13" rx="7" ry="4.5"></ellipse><line x1="18" y1="13" x2="22" y2="13"></line></svg></span><span class="num">05 · Kitchen</span></div><h4>مطبخ مفتوح</h4><p>المطبخ ظاهر بالكامل أمام العميل — قلب التجربة.</p></div>
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="9" width="7" height="11" rx="1"></rect><rect x="13" y="9" width="7" height="11" rx="1"></rect></svg></span><span class="num">06 · Seats</span></div><h4>٨ – ١٠ طاولات</h4><p>جلسات محدودة، دوران سريع، مناسب لفترة الصباح.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><line x1="5" y1="7" x2="19" y2="7"/><line x1="5" y1="12" x2="14" y2="12"/><line x1="5" y1="17" x2="17" y2="17"/></svg></span><span class="num">01 · Menu</span></div><h4>قائمة مختصرة</h4><p>من ٥ إلى ٧ أصناف أساسية — تركيز على الإتقان لا التوسعة.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg></span><span class="num">02 · Hours</span></div><h4>تشغيل صباحي محدّد</h4><p>يفتح المطبخ ٧:٠٠ ص ويُغلق ٣:٠٠ م — لا برانش، لا عشاء.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><polyline points="3,12 6,12 8,7 12,17 14,9 17,12 21,12"/></svg></span><span class="num">03 · Rhythm</span></div><h4>إيقاع ثابت</h4><p>نفس الإيقاع، نفس الجودة، طوال أيام العمل الستة.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/></svg></span><span class="num">04 · Focus</span></div><h4>تجربة فطور فقط</h4><p>تجربة داخلية مركّزة — لا تتشتّت بين أوقات وأطعمة مختلفة.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><ellipse cx="11" cy="13" rx="7" ry="4.5"/><line x1="18" y1="13" x2="22" y2="13"/></svg></span><span class="num">05 · Kitchen</span></div><h4>مطبخ مفتوح</h4><p>المطبخ ظاهر بالكامل أمام العميل — قلب التجربة.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="9" width="7" height="11" rx="1"/><rect x="13" y="9" width="7" height="11" rx="1"/></svg></span><span class="num">06 · Seats</span></div><h4>٨ – ١٠ طاولات</h4><p>جلسات محدودة، دوران سريع، مناسب لفترة الصباح.</p></div>
   </div>
   <div class="foot"><span>CHAPTER 02 · CONCEPT</span><span>005 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 06 · CONCEPT · WHAT IT IS NOT ═════════════════ -->
 <section class="page dark">
   <header class="head"><span class="num">02</span><span>Concept · What it is not <span class="ar">ما لا يكون</span></span><span>006 / 034</span></header>
   <div class="grid g-12-6" style="align-items:center;gap:48px">
@@ -428,7 +350,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 02 · CONCEPT</span><span>006 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 07 · CONCEPT · OPEN KITCHEN ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">02</span><span>Concept · The open kitchen <span class="ar">المطبخ المفتوح</span></span><span>007 / 034</span></header>
   <div class="grid g-12-6" style="gap:48px;align-items:center">
@@ -439,16 +360,15 @@ em{font-style:italic;color:var(--terra)}
       <p class="lead">المطبخ المفتوح ليس عنصر تصميم — بل مركز التجربة اليومية. يظهر مباشرة عند الدخول، فيُشاهد العميل التحضير والطهي والتشغيل.</p>
     </div>
     <div class="grid g-2" style="gap:18px">
-      <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><polyline points="3,12 6,12 8,7 10,17 12,9 14,15 16,11 21,12"></polyline></svg></span><span class="num">SOUND</span></div><h4>صوت البيض وحركة المقلاة</h4><p>إيقاع طبيعي يحلّ محل الموسيقى.</p></div>
-      <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M 2 12 C 5 6, 19 6, 22 12 C 19 18, 5 18, 2 12 Z"></path><circle cx="12" cy="12" r="3"></circle></svg></span><span class="num">SIGHT</span></div><h4>تحضير الأومليت أمام العميل</h4><p>يُحضّر طازجًا أمامك</p></div>
-      <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M 8 20 q 0 -4 2 -6 q -2 -3 0 -6"></path><path d="M 14 20 q 0 -4 2 -6 q -2 -3 0 -6"></path></svg></span><span class="num">SMELL</span></div><h4>رائحة الخبز والقهوة</h4><p>من المطبخ مباشرة — بدون معطّرات.</p></div>
-      <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><polyline points="12,6 12,12 16,12"></polyline></svg></span><span class="num">TIME</span></div><h4>التشغيل ظاهر للعميل</h4><p>الإيقاع الصباحي مفتوح طوال الزيارة.</p></div>
+      <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><polyline points="3,12 6,12 8,7 10,17 12,9 14,15 16,11 21,12"/></svg></span><span class="num">SOUND</span></div><h4>صوت البيض وحركة المقلاة</h4><p>إيقاع طبيعي يحلّ محل الموسيقى.</p></div>
+      <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M 2 12 C 5 6, 19 6, 22 12 C 19 18, 5 18, 2 12 Z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="num">SIGHT</span></div><h4>تحضير الأومليت أمام العميل</h4><p>يُحضّر طازجًا أمامك</p></div>
+      <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M 8 20 q 0 -4 2 -6 q -2 -3 0 -6"/><path d="M 14 20 q 0 -4 2 -6 q -2 -3 0 -6"/></svg></span><span class="num">SMELL</span></div><h4>رائحة الخبز والقهوة</h4><p>من المطبخ مباشرة — بدون معطّرات.</p></div>
+      <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,6 12,12 16,12"/></svg></span><span class="num">TIME</span></div><h4>التشغيل ظاهر للعميل</h4><p>الإيقاع الصباحي مفتوح طوال الزيارة.</p></div>
     </div>
   </div>
   <div class="foot"><span>CHAPTER 02 · CONCEPT</span><span>007 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 08 · CONCEPT · LOCATION & SPACE ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">02</span><span>Concept · Location &amp; Space <span class="ar">الموقع والفراغ</span></span><span>008 / 034</span></header>
   <div class="stack" style="margin-bottom:24px">
@@ -458,9 +378,9 @@ em{font-style:italic;color:var(--terra)}
     <p class="lead">الموقع ليس مجرّد عنوان — هو جزء من تجربة OMLT. الاتجاه، الحيّ، وحجم الفراغ كلها قرارات تخدم الإيقاع الصباحي.</p>
   </div>
   <div class="grid g-3">
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="2" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="22"></line><line x1="2" y1="12" x2="5" y2="12"></line><line x1="19" y1="12" x2="22" y2="12"></line></svg></span><span class="num">01 · Orientation</span></div><h4>اتجاه شرقي</h4><p>تفضيل الموقع المُتجه شرقًا قدر الإمكان — ضوء الصباح جزء من التجربة.</p></div>
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M 12 2 C 7 2, 4 6, 4 10 C 4 16, 12 22, 12 22 C 12 22, 20 16, 20 10 C 20 6, 17 2, 12 2 Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span><span class="num">02 · Neighborhood</span></div><h4>حيّ نابض بالحياة</h4><p>شارع حيوي ومأهول في أبها — لا منعزل، لا مخفي.</p></div>
-    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="1"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg></span><span class="num">03 · Footprint</span></div><h4>٨ – ١٠ طاولات</h4><p>صغير ليبقى شخصيًّا، كبير ليبقى حيًّا.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg></span><span class="num">01 · Orientation</span></div><h4>اتجاه شرقي</h4><p>تفضيل الموقع المُتجه شرقًا قدر الإمكان — ضوء الصباح جزء من التجربة.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M 12 2 C 7 2, 4 6, 4 10 C 4 16, 12 22, 12 22 C 12 22, 20 16, 20 10 C 20 6, 17 2, 12 2 Z"/><circle cx="12" cy="10" r="3"/></svg></span><span class="num">02 · Neighborhood</span></div><h4>حيّ نابض بالحياة</h4><p>شارع حيوي ومأهول في أبها — لا منعزل، لا مخفي.</p></div>
+    <div class="card"><div class="ic-row"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="1"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span><span class="num">03 · Footprint</span></div><h4>٨ – ١٠ طاولات</h4><p>صغير ليبقى شخصيًّا، كبير ليبقى حيًّا.</p></div>
   </div>
   <div style="margin-top:20px;padding:18px 22px;background:var(--cream);border:1px solid var(--hair);border-radius:12px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
     <span class="label">The feeling we test for</span>
@@ -470,81 +390,37 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 02 · CONCEPT</span><span>008 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 09 · CONCEPT · FLOOR PLAN ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">02</span><span>Concept · Floor Plan Layout <span class="ar">المخطط المعماري</span></span><span>009 / 034</span></header>
-
-  <style>
-    .fp-board{position:relative;padding:48px 56px;background:linear-gradient(180deg,#F6F0E8 0%,#EFE6D2 100%);border:1px solid var(--hair);border-radius:14px;overflow:hidden}
-    .fp-grid{position:absolute;inset:0;
-      background-image:
-        linear-gradient(rgba(27,34,53,0.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(27,34,53,0.045) 1px, transparent 1px);
-      background-size:32px 32px;
-      pointer-events:none;mix-blend-mode:multiply}
-    .fp-corner{position:absolute;width:48px;height:48px;border:1.5px solid var(--terra);opacity:0.85}
-    .fp-corner.tl{top:18px;left:18px;border-right:0;border-bottom:0}
-    .fp-corner.tr{top:18px;right:18px;border-left:0;border-bottom:0}
-    .fp-corner.bl{bottom:18px;left:18px;border-right:0;border-top:0}
-    .fp-corner.br{bottom:18px;right:18px;border-left:0;border-top:0}
-    .fp-frame{position:relative;background:#FFFDF7;border:1px solid rgba(27,34,53,0.18);border-radius:10px;padding:32px;box-shadow:0 24px 60px -22px rgba(27,34,53,0.18), 0 6px 20px rgba(27,34,53,0.06)}
-    .fp-frame img{display:block;width:100%;height:auto;border-radius:6px}
-    .fp-frame .ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;min-height:420px;border:1px dashed rgba(27,34,53,0.25);border-radius:8px;color:rgba(27,34,53,0.5);font-family:var(--mono);font-size:11px;letter-spacing:0.32em;text-transform:uppercase;text-align:center;padding:24px}
-    .fp-frame .ph .ic{width:48px;height:48px;border:1.5px solid rgba(27,34,53,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px}
-    .fp-meta-row{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:16px;border-top:1px solid rgba(27,34,53,0.10);font-family:var(--mono);font-size:10px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(27,34,53,0.55);font-weight:600}
-    .fp-meta-row .scale{display:flex;align-items:center;gap:10px}
-    .fp-meta-row .scale-bar{width:80px;height:4px;background:linear-gradient(90deg,var(--terra) 0 25%,transparent 25% 27%,var(--terra) 27% 52%,transparent 52% 54%,var(--terra) 54% 79%,transparent 79% 81%,var(--terra) 81% 100%)}
-    .fp-meta-row .dir{display:flex;align-items:center;gap:8px}
-    .fp-meta-row .dir-arrow{width:14px;height:14px;border:1.5px solid var(--terra);border-bottom:0;border-left:0;transform:rotate(-45deg);position:relative}
-    .fp-meta-row .dir-arrow::before{content:"";position:absolute;width:1.5px;height:18px;background:var(--terra);left:50%;top:50%;transform-origin:bottom;transform:translate(-50%,-100%) rotate(45deg)}
-    .fp-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:24px}
-    .fp-stat{padding:18px;border:1px solid var(--hair);border-radius:10px;background:rgba(255,253,247,0.6)}
-    .fp-stat .k{font-family:var(--mono);font-size:9.5px;letter-spacing:0.32em;text-transform:uppercase;color:var(--terra);font-weight:700}
-    .fp-stat .v{font-family:var(--serif);font-weight:900;font-size:28px;color:var(--navy);line-height:1;margin-top:6px}
-    .fp-stat .s{font-family:var(--ar);font-size:11px;color:rgba(27,34,53,0.65);margin-top:4px;line-height:1.7}
-  </style>
-
   <div class="stack" style="margin-bottom:32px">
     <span class="kicker">Architecture · Layout</span>
     <h2 class="h-1">OMLT Floor Plan<br><em>Layout.</em></h2>
     <span class="rule-tiny"></span>
     <p class="lead">Customer flow, operational efficiency and live cooking experience.<br><span style="font-family:var(--ar);font-size:15px;color:rgba(15,20,34,0.62)">مخطط معماري معتمد — تدفّق العميل، كفاءة التشغيل، وتجربة الطهي المباشر.</span></p>
   </div>
-
   <div class="fp-board">
     <div class="fp-grid"></div>
     <span class="fp-corner tl"></span><span class="fp-corner tr"></span>
     <span class="fp-corner bl"></span><span class="fp-corner br"></span>
-
     <div class="fp-frame">
-      <img src="./OMLT-Master-Presentation_files/omlt-floor-plan.png" alt="OMLT — approved floor plan" onerror="this.style.display=&#39;none&#39;;this.nextElementSibling.style.display=&#39;flex&#39;">
-      <div class="ph" style="display:none">
-        <div class="ic">▢</div>
-        <div>Place the approved floor-plan image at</div>
-        <div style="color:var(--terra)">outputs / omlt-floor-plan.png</div>
-        <div style="font-family:var(--ar);letter-spacing:0;text-transform:none;font-size:12px;color:rgba(27,34,53,0.55)">المخطط المعتمد يظهر هنا بمجرد حفظ الصورة بهذا الاسم.</div>
-      </div>
-
+      <img src="omlt-floor-plan.png" alt="OMLT — approved floor plan"/>
       <div class="fp-meta-row">
         <span>Drawing No. · A-01</span>
         <div class="scale"><span>SCALE</span><span class="scale-bar"></span><span>1 : 100</span></div>
-        <div class="dir"><span>EAST</span><span class="dir-arrow"></span><span>N</span></div>
+        <span>EAST · N</span>
         <span>13.7 m × 11.2 m</span>
       </div>
     </div>
   </div>
-
   <div class="fp-stats">
     <div class="fp-stat"><div class="k">Footprint</div><div class="v">135–145 m²</div><div class="s">المساحة التقريبية</div></div>
     <div class="fp-stat"><div class="k">Tables</div><div class="v">8 + bar</div><div class="s">8 طاولات + بار الشيف</div></div>
     <div class="fp-stat"><div class="k">Live cooking</div><div class="v">Open</div><div class="s">منطقة طهي مباشر مرئية</div></div>
     <div class="fp-stat"><div class="k">Orientation</div><div class="v">East</div><div class="s">الجهة الشرقية · ضوء الصباح</div></div>
   </div>
-
   <div class="foot"><span>CHAPTER 02 · CONCEPT</span><span>009 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 09 · VISION · MORNING ═════════════════ -->
 <section class="page terra">
   <header class="head"><span class="num">03</span><span>Vision · Become part of the morning <span class="ar">جزء من الصباح</span></span><span>010 / 034</span></header>
   <div class="grid g-12-7-5" style="align-items:center;gap:48px">
@@ -555,11 +431,7 @@ em{font-style:italic;color:var(--terra)}
       <p class="lead">نهدف إلى صناعة مكان يعود إليه العميل ضمن روتينه الصباحي. النجاح يُقاس بالعودة المتكرّرة، لا بعدد الزيارات الأولى.</p>
     </div>
     <div class="col" style="gap:18px">
-      <div style="border:1px solid rgba(246,236,214,0.32);border-radius:14px;padding:24px;background:rgba(27,34,53,0.18)">
-        <span class="kicker">Core purpose</span>
-        <h3 class="h-3" style="margin-top:10px;color:var(--cream)">A reliable habit, not a spectacle.</h3>
-        <p class="body" style="margin-top:10px;color:rgba(246,236,214,0.82)">OMLT يُقدّم وجبة فطور بسيطة ومُتقَنة، في مكان واضح ومألوف، بإيقاع صباحي ثابت.</p>
-      </div>
+      <div style="border:1px solid rgba(246,236,214,0.32);border-radius:14px;padding:24px;background:rgba(27,34,53,0.18)"><span class="kicker">Core purpose</span><h3 class="h-3" style="margin-top:10px;color:var(--cream)">A reliable habit, not a spectacle.</h3><p class="body" style="margin-top:10px;color:rgba(246,236,214,0.82)">OMLT يُقدّم وجبة فطور بسيطة ومُتقَنة، في مكان واضح ومألوف، بإيقاع صباحي ثابت.</p></div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
         <div style="border:1px solid rgba(246,236,214,0.32);border-radius:12px;padding:18px"><span class="kicker">Measure</span><div style="font-family:var(--serif);font-size:28px;font-weight:900;margin-top:8px;color:var(--cream)">Return rate</div></div>
         <div style="border:1px solid rgba(246,236,214,0.32);border-radius:12px;padding:18px"><span class="kicker">Ignore</span><div style="font-family:var(--serif);font-size:28px;font-weight:900;margin-top:8px;color:var(--cream)">First visits</div></div>
@@ -569,7 +441,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 03 · VISION</span><span>010 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 10 · VISION · PRINCIPLES ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">03</span><span>Vision · Operational principles <span class="ar">المبادئ التشغيلية</span></span><span>011 / 034</span></header>
   <div class="stack" style="margin-bottom:28px"><span class="kicker">Four principles, daily</span><h2 class="h-2">أربعة مبادئ تحكم كل قرار في OMLT.</h2></div>
@@ -582,34 +453,17 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 03 · VISION</span><span>011 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 11 · VISION · EXPANSION ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">03</span><span>Vision · Realistic expansion <span class="ar">خطة التوسّع</span></span><span>012 / 034</span></header>
   <div class="stack" style="margin-bottom:36px"><span class="kicker">A three-phase path</span><h2 class="h-2">نموذج واحد يُثبت <em>أولًا</em>، ثم يُدرَس التوسّع.</h2></div>
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px">
-    <div style="border:1px solid var(--hair);border-radius:12px;padding:20px;background:#fff">
-      <div style="display:flex;align-items:center;gap:10px"><span style="width:28px;height:28px;border-radius:50%;background:var(--terra);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:11px">01</span><span class="kicker">Phase one</span></div>
-      <h3 style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);margin-top:10px">إثبات الفكرة</h3>
-      <span class="rule-tiny" style="margin:8px 0;display:block"></span>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;font-family:var(--ar);font-size:12.5px;line-height:1.7;color:rgba(15,20,34,0.74)"><li>· افتتاح الفرع الأول</li><li>· بناء قاعدة عملاء أساسية</li><li>· تحسين التشغيل اليومي</li></ul>
-    </div>
-    <div style="border:1px solid var(--hair);border-radius:12px;padding:20px;background:#fff">
-      <div style="display:flex;align-items:center;gap:10px"><span style="width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:11px">02</span><span class="kicker">Phase two</span></div>
-      <h3 style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);margin-top:10px">توثيق وتطوير</h3>
-      <span class="rule-tiny" style="margin:8px 0;display:block"></span>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;font-family:var(--ar);font-size:12.5px;line-height:1.7;color:rgba(15,20,34,0.74)"><li>· توثيق الوصفات قياسيًا</li><li>· إجراءات تشغيل موحّدة</li><li>· استقرار مالي للفرع الأول</li></ul>
-    </div>
-    <div style="border:1px solid var(--hair);border-radius:12px;padding:20px;background:#fff">
-      <div style="display:flex;align-items:center;gap:10px"><span style="width:28px;height:28px;border-radius:50%;background:var(--yolk);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:11px">03</span><span class="kicker">Phase three</span></div>
-      <h3 style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);margin-top:10px">دراسة التوسّع</h3>
-      <span class="rule-tiny" style="margin:8px 0;display:block"></span>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:5px;font-family:var(--ar);font-size:12.5px;line-height:1.7;color:rgba(15,20,34,0.74)"><li>· دراسة فرع ثانٍ عند النجاح</li><li>· تقييم الموقع بالبيانات</li><li>· الحفاظ على النموذج والهوية</li></ul>
-    </div>
+    <div style="border:1px solid var(--hair);border-radius:12px;padding:20px;background:#fff"><div style="display:flex;align-items:center;gap:10px"><span style="width:28px;height:28px;border-radius:50%;background:var(--terra);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:11px">01</span><span class="kicker">Phase one</span></div><h3 style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);margin-top:10px">إثبات الفكرة</h3><span class="rule-tiny" style="margin:8px 0;display:block"></span><ul style="list-style:none;display:flex;flex-direction:column;gap:5px;font-family:var(--ar);font-size:12.5px;line-height:1.7;color:rgba(15,20,34,0.74)"><li>· افتتاح الفرع الأول</li><li>· بناء قاعدة عملاء أساسية</li><li>· تحسين التشغيل اليومي</li></ul></div>
+    <div style="border:1px solid var(--hair);border-radius:12px;padding:20px;background:#fff"><div style="display:flex;align-items:center;gap:10px"><span style="width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:11px">02</span><span class="kicker">Phase two</span></div><h3 style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);margin-top:10px">توثيق وتطوير</h3><span class="rule-tiny" style="margin:8px 0;display:block"></span><ul style="list-style:none;display:flex;flex-direction:column;gap:5px;font-family:var(--ar);font-size:12.5px;line-height:1.7;color:rgba(15,20,34,0.74)"><li>· توثيق الوصفات قياسيًا</li><li>· إجراءات تشغيل موحّدة</li><li>· استقرار مالي للفرع الأول</li></ul></div>
+    <div style="border:1px solid var(--hair);border-radius:12px;padding:20px;background:#fff"><div style="display:flex;align-items:center;gap:10px"><span style="width:28px;height:28px;border-radius:50%;background:var(--yolk);color:var(--navy);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:11px">03</span><span class="kicker">Phase three</span></div><h3 style="font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);margin-top:10px">دراسة التوسّع</h3><span class="rule-tiny" style="margin:8px 0;display:block"></span><ul style="list-style:none;display:flex;flex-direction:column;gap:5px;font-family:var(--ar);font-size:12.5px;line-height:1.7;color:rgba(15,20,34,0.74)"><li>· دراسة فرع ثانٍ عند النجاح</li><li>· تقييم الموقع بالبيانات</li><li>· الحفاظ على النموذج والهوية</li></ul></div>
   </div>
   <div class="foot"><span>CHAPTER 03 · VISION</span><span>012 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 12 · COSTS · STARTUP ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">04</span><span>Business Setup · Startup costs <span class="ar">التكاليف الأولية</span></span><span>013 / 034</span></header>
   <div class="grid g-12-5-7" style="gap:48px">
@@ -637,20 +491,18 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 04 · BUSINESS</span><span>013 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 13 · COSTS · LAUNCH BUDGET ═════════════════ -->
 <section class="page dark">
   <header class="head"><span class="num">04</span><span>Business Setup · Launch budget <span class="ar">ميزانية الإطلاق</span></span><span>014 / 034</span></header>
   <div class="stack" style="margin-bottom:30px"><span class="kicker">Expected launch budget</span><h2 class="h-1" style="color:var(--cream)">330K <span style="color:var(--yolk);font-style:italic">–</span> 495K<br><span style="font-size:42px;opacity:0.7">ريال سعودي</span></h2></div>
   <div class="grid g-4">
     <div style="border:1px solid rgba(246,236,214,0.22);border-radius:14px;padding:22px"><span class="kicker">Interior</span><div style="font-family:var(--serif);font-weight:900;font-size:34px;color:var(--cream);margin-top:8px">36%</div><p style="font-family:var(--ar);font-size:13px;color:rgba(246,236,214,0.72);line-height:1.7;margin-top:8px">تهيئة، تشطيب، إضاءة، تنفيذ المطبخ المفتوح.</p></div>
     <div style="border:1px solid rgba(246,236,214,0.22);border-radius:14px;padding:22px"><span class="kicker">Equipment</span><div style="font-family:var(--serif);font-weight:900;font-size:34px;color:var(--cream);margin-top:8px">22%</div><p style="font-family:var(--ar);font-size:13px;color:rgba(246,236,214,0.72);line-height:1.7;margin-top:8px">معدّات الطبخ، التبريد، القهوة، التهوية، POS.</p></div>
-    <div style="border:1px solid rgba(246,236,214,0.22);border-radius:14px;padding:22px"><span class="kicker">Branding</span><div style="font-family:var(--serif);font-weight:900;font-size:34px;color:var(--cream);margin-top:8px">6%</div><p style="font-family:var(--ar);font-size:13px;color:rgba(246,236,214,0.72);line-height:1.7;margin-top:8px">الهوية، الطباعة، اللافتات، التغليف الأساسي.</p></div>
+    <div style="border:1px solid rgba(246,236,214,0.22);border-radius:14px;padding:22px"><span class="kicker">Branding</span><div style="font-family:var(--serif);font-weight:900;font-size:34px;color:var(--cream);margin-top:8px">6%</div><p style="font-family:var(--ar);font-size:13px;color:rgba(246,236,214,0.72);line-height:1.7;margin-top:8px">الهوية، الطباعة، اللافتات، التغليف.</p></div>
     <div style="border:1px solid rgba(246,236,214,0.22);border-radius:14px;padding:22px"><span class="kicker">Reserves</span><div style="font-family:var(--serif);font-weight:900;font-size:34px;color:var(--cream);margin-top:8px">20%</div><p style="font-family:var(--ar);font-size:13px;color:rgba(246,236,214,0.72);line-height:1.7;margin-top:8px">سيولة لأوّل أشهر — احتياط أمان.</p></div>
   </div>
   <div class="foot"><span>CHAPTER 04 · BUSINESS</span><span>014 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 14 · COSTS · STAFFING ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">04</span><span>Business Setup · Staffing plan <span class="ar">فريق التشغيل</span></span><span>015 / 034</span></header>
   <div class="stack" style="margin-bottom:28px"><span class="kicker">A small, focused team</span><h2 class="h-2">ستّة أدوار، فريقٌ صغيرٌ <em>ودقيق</em>.</h2></div>
@@ -665,7 +517,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 04 · BUSINESS</span><span>015 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 15 · COSTS · SALARIES ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">04</span><span>Business Setup · Estimated salaries <span class="ar">الرواتب الشهرية</span></span><span>016 / 034</span></header>
   <div class="grid g-12-5-7" style="gap:48px">
@@ -693,7 +544,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 04 · BUSINESS</span><span>016 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 16 · COSTS · REVENUE MODEL ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">04</span><span>Business Setup · Revenue model <span class="ar">نموذج الإيرادات</span></span><span>017 / 034</span></header>
   <div class="stack" style="margin-bottom:30px"><span class="kicker">Realistic financial targets</span><h2 class="h-2">إيرادات مبنية على <em>استقرار</em>، لا على وعود.</h2></div>
@@ -711,11 +561,10 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 04 · BUSINESS</span><span>017 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 17 · THE MARK · HERO (light editorial) ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">05</span><span>The Mark · The badge <span class="ar">الشارة</span></span><span>018 / 034</span></header>
   <div class="logo-hero">
-    <div class="stage"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" alt="OMLT approved logo"></div>
+    <div class="stage"><img src="omlt-logo-approved.png" alt="OMLT approved logo"/></div>
     <div class="col stack-lg">
       <span class="kicker">Direction C · Final · Approved</span>
       <h2 class="h-1">The badge.<br><em>One mark,</em><br>every surface.</h2>
@@ -730,12 +579,11 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 05 · THE MARK</span><span>018 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 18 · THE MARK · ANATOMY ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">05</span><span>The Mark · Anatomy <span class="ar">تشريح الشارة</span></span><span>019 / 034</span></header>
   <div class="anatomy">
     <div class="stage-lg">
-      <img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" alt="OMLT anatomy">
+      <img src="omlt-logo-approved.png" alt="OMLT anatomy"/>
       <div class="anno" style="top:8%;right:10%"><span class="b">01</span>Outer frame</div>
       <div class="anno" style="top:24%;left:8%"><span class="b">02</span>Arc text</div>
       <div class="anno" style="top:52%;right:6%"><span class="b">03</span>Egg shape</div>
@@ -760,58 +608,37 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 05 · THE MARK</span><span>019 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 19 · THE MARK · VARIATIONS ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">05</span><span>The Mark · Variations <span class="ar">تنويعات الشارة</span></span><span>020 / 034</span></header>
-  <div class="stack" style="margin-bottom:28px"><span class="kicker">One mark, three lockups</span><h2 class="h-2">Primary · Mono · Stamp.</h2></div>
+  <div class="stack" style="margin-bottom:28px"><span class="kicker">One mark, three lockups</span><h2 class="h-2">Primary · Mono · Wordmark.</h2></div>
   <div class="grid g-3" style="gap:22px;align-items:start">
-    <div class="lr-cell ok">
-      <div class="demo" style="background:var(--paper);height:200px"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" alt="primary" style="max-width:68%"></div>
-      <div class="cap"><span class="mark">A</span><span class="lbl">Primary · Full color<small>الأساسي · كامل الألوان</small></span></div>
-    </div>
-    <div class="lr-cell ok">
-      <div class="demo" style="background:var(--cream);height:200px"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" alt="mono cream" style="max-width:68%;filter:grayscale(1) contrast(1.2)"></div>
-      <div class="cap"><span class="mark">B</span><span class="lbl">Mono · Single tone<small>أحادي اللون</small></span></div>
-    </div>
-    <div class="lr-cell ok">
-      <div class="demo" style="background:var(--navy);height:200px;display:flex;align-items:center;justify-content:center">
-        <svg viewBox="0 0 200 60" width="60%"><text x="100" y="42" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="42" letter-spacing="0.1em" fill="#F6ECD6">OMLT</text></svg>
-      </div>
-      <div class="cap"><span class="mark">C</span><span class="lbl">Wordmark only<small>كلمة فقط</small></span></div>
-    </div>
+    <div class="lr-cell ok"><div class="demo" style="background:var(--paper);height:200px"><img src="omlt-logo-approved.png" alt="primary" style="max-width:68%"/></div><div class="cap"><span class="mark">A</span><span class="lbl">Primary · Full color<small>الأساسي · كامل الألوان</small></span></div></div>
+    <div class="lr-cell ok"><div class="demo" style="background:var(--cream);height:200px"><img src="omlt-logo-approved.png" alt="mono" style="max-width:68%;filter:grayscale(1) contrast(1.2)"/></div><div class="cap"><span class="mark">B</span><span class="lbl">Mono · Single tone<small>أحادي اللون</small></span></div></div>
+    <div class="lr-cell ok"><div class="demo" style="background:var(--navy);height:200px;display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 200 60" width="60%"><text x="100" y="42" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="42" letter-spacing="0.1em" fill="#F6ECD6">OMLT</text></svg></div><div class="cap"><span class="mark">C</span><span class="lbl">Wordmark only<small>كلمة فقط</small></span></div></div>
   </div>
-  <div style="margin-top:28px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px">
-    <div style="aspect-ratio:1/1;background:var(--cream);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:14px"><svg viewBox="0 0 100 100" width="100%"><circle cx="50" cy="50" r="46" fill="#C8442C" stroke="#1B2235" stroke-width="2"></circle><circle cx="50" cy="42" r="14" fill="#F6ECD6" stroke="#1B2235" stroke-width="1.5"></circle><circle cx="52" cy="40" r="5" fill="#E6A532"></circle></svg></div>
-    <div style="aspect-ratio:1/1;background:var(--navy);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:14px"><svg viewBox="0 0 100 100" width="100%"><circle cx="50" cy="50" r="46" fill="none" stroke="#F6ECD6" stroke-width="2"></circle><circle cx="50" cy="42" r="14" fill="none" stroke="#F6ECD6" stroke-width="1.5"></circle><circle cx="52" cy="40" r="5" fill="#E6A532"></circle></svg></div>
-    <div style="aspect-ratio:1/1;background:var(--terra);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:14px"><svg viewBox="0 0 100 100" width="100%"><circle cx="50" cy="42" r="14" fill="#F6ECD6" stroke="#1B2235" stroke-width="1.5"></circle><circle cx="52" cy="40" r="5" fill="#E6A532"></circle></svg></div>
-    <div style="aspect-ratio:1/1;background:var(--yolk);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:14px"><svg viewBox="0 0 100 100" width="100%"><text x="50" y="60" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="32" fill="#1B2235">OMLT</text></svg></div>
-  </div>
-  <div style="margin-top:16px;font-family:var(--mono);font-size:10px;letter-spacing:0.28em;color:rgba(15,20,34,0.55);text-transform:uppercase">Reduced lockups · favicon · stamp · spot color</div>
   <div class="foot"><span>CHAPTER 05 · THE MARK</span><span>020 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 20 · THE MARK · USAGE (do / don't) ═════════════════ -->
 <section class="page cream">
   <header class="head"><span class="num">05</span><span>The Mark · Usage <span class="ar">قواعد الاستخدام</span></span><span>021 / 034</span></header>
   <div class="stack" style="margin-bottom:18px"><span class="kicker">Do · Don't</span><h2 class="h-2">A logo doesn't <em>negotiate.</em></h2></div>
   <div class="lr-section ok">✓ Correct usage</div>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:14px">
-    <div class="lr-cell ok"><div class="demo" style="background:var(--cream);outline:1px dashed rgba(200,68,44,0.35);outline-offset:-12px"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="max-width:62%"></div><div class="cap"><span class="mark">✓</span><span class="lbl">Clear space<small>مساحة آمنة</small></span></div></div>
-    <div class="lr-cell ok"><div class="demo" style="background:var(--navy)"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png"></div><div class="cap"><span class="mark">✓</span><span class="lbl">Approved background<small>خلفية معتمدة</small></span></div></div>
-    <div class="lr-cell ok"><div class="demo" style="background:var(--cream);align-items:flex-end;justify-content:flex-start;padding:14px;gap:12px"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="width:56px;height:auto"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="width:42px;height:auto"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="width:30px;height:auto;opacity:0.85"></div><div class="cap"><span class="mark">✓</span><span class="lbl">Minimum size<small>الحجم الأدنى</small></span></div></div>
-    <div class="lr-cell ok"><div class="demo" style="background:var(--cream)"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png"></div><div class="cap"><span class="mark">✓</span><span class="lbl">Complete<small>كاملًا في مكانه</small></span></div></div>
+    <div class="lr-cell ok"><div class="demo" style="background:var(--cream);outline:1px dashed rgba(200,68,44,0.35);outline-offset:-12px"><img src="omlt-logo-approved.png" style="max-width:62%"/></div><div class="cap"><span class="mark">✓</span><span class="lbl">Clear space<small>مساحة آمنة</small></span></div></div>
+    <div class="lr-cell ok"><div class="demo" style="background:var(--navy)"><img src="omlt-logo-approved.png"/></div><div class="cap"><span class="mark">✓</span><span class="lbl">Approved background<small>خلفية معتمدة</small></span></div></div>
+    <div class="lr-cell ok"><div class="demo" style="background:var(--cream);align-items:flex-end;justify-content:flex-start;padding:14px;gap:12px"><img src="omlt-logo-approved.png" style="width:56px;height:auto"/><img src="omlt-logo-approved.png" style="width:42px;height:auto"/><img src="omlt-logo-approved.png" style="width:30px;height:auto;opacity:0.85"/></div><div class="cap"><span class="mark">✓</span><span class="lbl">Minimum size<small>الحجم الأدنى</small></span></div></div>
+    <div class="lr-cell ok"><div class="demo" style="background:var(--cream)"><img src="omlt-logo-approved.png"/></div><div class="cap"><span class="mark">✓</span><span class="lbl">Complete<small>كاملًا في مكانه</small></span></div></div>
   </div>
   <div class="lr-section no">✕ Never do</div>
   <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
-    <div class="lr-cell no"><div class="demo" style="background:var(--cream)"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="width:88%;height:60%;object-fit:fill"></div><div class="cap"><span class="mark">✕</span><span class="lbl">Stretch / squash<small>تمديد أو ضغط</small></span></div></div>
-    <div class="lr-cell no"><div class="demo" style="background:var(--cream)"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="transform:rotate(-18deg)"></div><div class="cap"><span class="mark">✕</span><span class="lbl">Rotation<small>إمالة أو دوران</small></span></div></div>
-    <div class="lr-cell no"><div class="demo" style="background:var(--cream)"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="filter:hue-rotate(170deg) saturate(0.7)"></div><div class="cap"><span class="mark">✕</span><span class="lbl">Color modification<small>تعديل الألوان</small></span></div></div>
-    <div class="lr-cell no"><div class="demo" style="background:linear-gradient(135deg,#7BA284,#E6A532,#9C3520)"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png"></div><div class="cap"><span class="mark">✕</span><span class="lbl">Off-palette background<small>خلفية خارج اللوحة</small></span></div></div>
+    <div class="lr-cell no"><div class="demo" style="background:var(--cream)"><img src="omlt-logo-approved.png" style="width:88%;height:60%;object-fit:fill"/></div><div class="cap"><span class="mark">✕</span><span class="lbl">Stretch / squash<small>تمديد أو ضغط</small></span></div></div>
+    <div class="lr-cell no"><div class="demo" style="background:var(--cream)"><img src="omlt-logo-approved.png" style="transform:rotate(-18deg)"/></div><div class="cap"><span class="mark">✕</span><span class="lbl">Rotation<small>إمالة أو دوران</small></span></div></div>
+    <div class="lr-cell no"><div class="demo" style="background:var(--cream)"><img src="omlt-logo-approved.png" style="filter:hue-rotate(170deg) saturate(0.7)"/></div><div class="cap"><span class="mark">✕</span><span class="lbl">Color modification<small>تعديل الألوان</small></span></div></div>
+    <div class="lr-cell no"><div class="demo" style="background:linear-gradient(135deg,#7BA284,#E6A532,#9C3520)"><img src="omlt-logo-approved.png"/></div><div class="cap"><span class="mark">✕</span><span class="lbl">Off-palette background<small>خلفية خارج اللوحة</small></span></div></div>
   </div>
   <div class="foot"><span>CHAPTER 05 · THE MARK</span><span>021 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 21 · COLORS · PALETTE ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">06</span><span>Color &amp; Type · Palette <span class="ar">لوحة الألوان</span></span><span>022 / 034</span></header>
   <div class="stack" style="margin-bottom:24px"><span class="kicker">Six colors, fixed ratios</span><h2 class="h-1">Six colors.<br><em>Locked ratios.</em></h2></div>
@@ -823,13 +650,10 @@ em{font-style:italic;color:var(--terra)}
     <div class="swatch" style="background:#7BA284;color:#F6ECD6"><div><span class="meta" style="color:rgba(246,236,214,0.7)">#7BA284</span><div class="nm">Herb</div><div style="font-family:var(--ar);font-size:11px;opacity:0.78;margin-top:2px">عشبي</div></div><div class="ratio">3%</div></div>
     <div class="swatch" style="background:#9C3520;color:#F6ECD6"><div><span class="meta" style="color:rgba(246,236,214,0.7)">#9C3520</span><div class="nm">Deep</div><div style="font-family:var(--ar);font-size:11px;opacity:0.78;margin-top:2px">عميق</div></div><div class="ratio">2%</div></div>
   </div>
-  <div style="margin-top:24px;display:flex;height:14px;border-radius:999px;overflow:hidden;border:1px solid var(--hair)">
-    <div style="flex:50;background:#C8442C"></div><div style="flex:25;background:#F6ECD6"></div><div style="flex:12;background:#1B2235"></div><div style="flex:8;background:#E6A532"></div><div style="flex:3;background:#7BA284"></div><div style="flex:2;background:#9C3520"></div>
-  </div>
+  <div style="margin-top:24px;display:flex;height:14px;border-radius:999px;overflow:hidden;border:1px solid var(--hair)"><div style="flex:50;background:#C8442C"></div><div style="flex:25;background:#F6ECD6"></div><div style="flex:12;background:#1B2235"></div><div style="flex:8;background:#E6A532"></div><div style="flex:3;background:#7BA284"></div><div style="flex:2;background:#9C3520"></div></div>
   <div class="foot"><span>CHAPTER 06 · COLOR &amp; TYPE</span><span>022 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 22 · COLORS · YOLK RULE ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">06</span><span>Color &amp; Type · The yolk rule <span class="ar">قاعدة الصفار</span></span><span>023 / 034</span></header>
   <div class="grid g-12-6" style="gap:48px;align-items:center">
@@ -847,7 +671,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 06 · COLOR &amp; TYPE</span><span>023 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 23 · TYPE · FRANK RUHL LIBRE ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">06</span><span>Typography · Frank Ruhl Libre <span class="ar">الخطّ الأول</span></span><span>024 / 034</span></header>
   <div class="grid g-12-5-7" style="gap:48px;align-items:center">
@@ -865,7 +688,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 06 · COLOR &amp; TYPE</span><span>024 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 24 · TYPE · SPACE GROTESK + TAJAWAL ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">06</span><span>Typography · Space Grotesk &amp; Tajawal <span class="ar">الخطّان الثاني والثالث</span></span><span>025 / 034</span></header>
   <div class="grid g-2" style="gap:40px">
@@ -876,96 +698,83 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 06 · COLOR &amp; TYPE</span><span>025 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 25 · APPLICATIONS · ICONS & PATTERN ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">07</span><span>Applications · Icons &amp; Pattern <span class="ar">الأيقونات والنقش</span></span><span>026 / 034</span></header>
   <div class="stack" style="margin-bottom:24px"><span class="kicker">The supporting cast</span><h2 class="h-2">Twelve icons,<br>three patterns.</h2></div>
   <div class="icon-grid">
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="13" rx="6" ry="8" fill="none"></ellipse><circle cx="12" cy="12" r="2.5" fill="#E6A532" stroke="none"></circle></svg><span class="nm">Egg</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><ellipse cx="11" cy="13" rx="7" ry="4.5"></ellipse><line x1="18" y1="13" x2="22" y2="13"></line></svg><span class="nm">Pan</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 7 20 q 0 -4 2 -6 q -2 -3 0 -6"></path><path d="M 12 20 q 0 -4 2 -6 q -2 -3 0 -6"></path><path d="M 17 20 q 0 -4 2 -6 q -2 -3 0 -6"></path></svg><span class="nm">Steam</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 8 20 L 8 8 L 16 8 L 16 20 Z"></path><path d="M 6 8 L 18 8"></path><line x1="10" y1="6" x2="10" y2="3"></line><line x1="14" y1="6" x2="14" y2="3"></line></svg><span class="nm">Toast</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 6 8 L 18 8 L 17 20 L 7 20 Z"></path><path d="M 18 10 q 3 0 3 3 q 0 3 -3 3"></path></svg><span class="nm">Cup</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><polyline points="12,7 12,12 16,14"></polyline></svg><span class="nm">Time</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><polyline points="3,12 6,12 8,7 10,17 12,9 14,15 16,11 21,12"></polyline></svg><span class="nm">Sound</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 12 2 C 8 7, 7 13, 12 22 C 17 13, 16 7, 12 2 Z"></path></svg><span class="nm">Herb</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="3" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="21"></line><line x1="3" y1="12" x2="5" y2="12"></line><line x1="19" y1="12" x2="21" y2="12"></line></svg><span class="nm">Sun</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><circle cx="12" cy="12" r="4"></circle><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"></circle></svg><span class="nm">Focus</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 4 18 L 4 9 L 12 4 L 20 9 L 20 18 Z"></path><path d="M 9 18 L 9 13 L 15 13 L 15 18"></path></svg><span class="nm">Place</span></div>
-    <div class="icn-cell"><svg viewBox="0 0 24 24"><rect x="4" y="9" width="7" height="11" rx="1"></rect><rect x="13" y="9" width="7" height="11" rx="1"></rect></svg><span class="nm">Seats</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="13" rx="6" ry="8" fill="none"/><circle cx="12" cy="12" r="2.5" fill="#E6A532" stroke="none"/></svg><span class="nm">Egg</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><ellipse cx="11" cy="13" rx="7" ry="4.5"/><line x1="18" y1="13" x2="22" y2="13"/></svg><span class="nm">Pan</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 7 20 q 0 -4 2 -6 q -2 -3 0 -6"/><path d="M 12 20 q 0 -4 2 -6 q -2 -3 0 -6"/><path d="M 17 20 q 0 -4 2 -6 q -2 -3 0 -6"/></svg><span class="nm">Steam</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 8 20 L 8 8 L 16 8 L 16 20 Z"/><path d="M 6 8 L 18 8"/></svg><span class="nm">Toast</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 6 8 L 18 8 L 17 20 L 7 20 Z"/></svg><span class="nm">Cup</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/></svg><span class="nm">Time</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><polyline points="3,12 6,12 8,7 10,17 12,9 14,15 16,11 21,12"/></svg><span class="nm">Sound</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 12 2 C 8 7, 7 13, 12 22 C 17 13, 16 7, 12 2 Z"/></svg><span class="nm">Herb</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><line x1="12" y1="3" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21"/></svg><span class="nm">Sun</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/></svg><span class="nm">Focus</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><path d="M 4 18 L 4 9 L 12 4 L 20 9 L 20 18 Z"/></svg><span class="nm">Place</span></div>
+    <div class="icn-cell"><svg viewBox="0 0 24 24"><rect x="4" y="9" width="7" height="11" rx="1"/><rect x="13" y="9" width="7" height="11" rx="1"/></svg><span class="nm">Seats</span></div>
   </div>
   <div class="pat-row">
-    <div class="pat"><div class="pat-canvas pat-egg"></div><div class="pat-cap">Egg · scattered repeat</div></div>
+    <div class="pat"><div class="pat-canvas"></div><div class="pat-cap">Egg · scattered repeat</div></div>
     <div class="pat"><div class="pat-canvas pat-arc"></div><div class="pat-cap">Arc · concentric badge</div></div>
     <div class="pat"><div class="pat-canvas pat-stripe"></div><div class="pat-cap">Stripe · awning stripe</div></div>
   </div>
   <div class="foot"><span>CHAPTER 07 · APPLICATIONS</span><span>026 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 26 · APPLICATIONS · PACKAGING ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">07</span><span>Applications · Packaging <span class="ar">التغليف</span></span><span>027 / 034</span></header>
-  <div class="stack" style="margin-bottom:24px"><span class="kicker">Packaging system</span><h2 class="h-2">A pantry of six<br>SKUs, one shelf voice.</h2><p class="lead">كل قطعة تغليف تحمل نفس البنية: شارة في الزاوية، اسم المنتج، رقم SKU، وزن، وملاحظة قصيرة. الاختلاف في اللون والصورة فقط.</p></div>
+  <div class="stack" style="margin-bottom:24px"><span class="kicker">Packaging system</span><h2 class="h-2">A pantry of six<br>SKUs, one shelf voice.</h2></div>
   <div class="app-grid">
-    <div class="app"><div class="canvas" style="background:var(--cream)"><svg viewBox="0 0 200 240" width="78%"><path d="M 30 40 L 170 40 L 170 220 L 30 220 Z" fill="#F6ECD6" stroke="#1B2235" stroke-width="3"></path><circle cx="100" cy="100" r="36" fill="#C8442C" stroke="#1B2235" stroke-width="3"></circle><circle cx="100" cy="100" r="14" fill="#F6ECD6" stroke="#1B2235" stroke-width="1.5"></circle><circle cx="102" cy="98" r="6" fill="#E6A532"></circle><text x="100" y="170" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="22" fill="#1B2235">SIX EGGS</text><text x="100" y="195" text-anchor="middle" font-family="Space Grotesk" font-size="8" letter-spacing="0.18em" fill="#1B2235">N° 01 · FREE RANGE</text></svg></div><div class="cap">N° 01 · Egg carton</div></div>
-    <div class="app"><div class="canvas" style="background:var(--navy)"><svg viewBox="0 0 200 240" width="42%"><path d="M 80 20 L 120 20 L 120 70 L 140 110 L 140 220 L 60 220 L 60 110 L 80 70 Z" fill="#9C3520" stroke="#F6ECD6" stroke-width="2"></path><rect x="62" y="120" width="76" height="80" fill="#F6ECD6"></rect><text x="100" y="148" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="14" fill="#9C3520">YOLK OIL</text><text x="100" y="170" text-anchor="middle" font-family="Space Grotesk" font-size="7" letter-spacing="0.18em" fill="#1B2235">120ML · COLD-PRESSED</text></svg></div><div class="cap">N° 02 · Yolk-oil bottle</div></div>
-    <div class="app"><div class="canvas" style="background:var(--yolk)"><svg viewBox="0 0 200 240" width="68%"><path d="M 30 70 L 30 220 L 170 220 L 170 70 Z" fill="#F6ECD6" stroke="#1B2235" stroke-width="3"></path><path d="M 60 70 L 60 40 C 60 22, 140 22, 140 40 L 140 70" fill="none" stroke="#1B2235" stroke-width="3"></path><text x="100" y="140" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="32" fill="#1B2235">OMLT</text><circle cx="100" cy="170" r="14" fill="#C8442C"></circle><circle cx="102" cy="168" r="5" fill="#E6A532"></circle></svg></div><div class="cap">N° 03 · Paper bag</div></div>
-    <div class="app"><div class="canvas" style="background:var(--herb)"><svg viewBox="0 0 200 240" width="60%"><path d="M 50 30 L 150 30 L 138 220 L 62 220 Z" fill="#F6ECD6" stroke="#1B2235" stroke-width="3"></path><rect x="56" y="70" width="88" height="80" fill="#C8442C"></rect><text x="100" y="105" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="22" fill="#F6ECD6">OMLT</text><text x="100" y="128" text-anchor="middle" font-family="Space Grotesk" font-size="7" letter-spacing="0.2em" fill="#F6ECD6">EVERY MORNING</text></svg></div><div class="cap">N° 04 · Cup &amp; sleeve</div></div>
-    <div class="app"><div class="canvas" style="background:var(--terra)"><div style="display:flex;gap:14px"><svg viewBox="0 0 100 100" width="80"><circle cx="50" cy="50" r="46" fill="#F6ECD6" stroke="#1B2235" stroke-width="2"></circle><circle cx="50" cy="46" r="14" fill="#E6A532"></circle></svg><svg viewBox="0 0 100 100" width="80"><circle cx="50" cy="50" r="46" fill="#1B2235" stroke="#F6ECD6" stroke-width="2"></circle><text x="50" y="58" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="22" fill="#F6ECD6">OMLT</text></svg></div></div><div class="cap">N° 05 · Sticker pack</div></div>
-    <div class="app"><div class="canvas" style="background:var(--cream);align-items:flex-start;padding:18px"><div style="font-family:&#39;Space Grotesk&#39;;font-size:9px;color:var(--navy);line-height:1.7;width:100%"><div style="text-align:center"><svg viewBox="0 0 60 60" width="32" style="display:inline-block"><circle cx="30" cy="30" r="26" fill="#C8442C"></circle><circle cx="30" cy="26" r="9" fill="#F6ECD6"></circle><circle cx="31" cy="25" r="3.5" fill="#E6A532"></circle></svg></div><div style="text-align:center;font-family:&#39;Frank Ruhl Libre&#39;;font-weight:900;font-size:14px;margin:6px 0">OMLT</div><div style="text-align:center;font-size:7px;letter-spacing:0.18em;color:rgba(15,20,34,0.6);margin-bottom:14px">BREAKFAST KITCHEN</div><div style="display:flex;justify-content:space-between"><span>Classic three-egg</span><span>22.00</span></div><div style="display:flex;justify-content:space-between"><span>Sourdough · daily</span><span>8.00</span></div><div style="display:flex;justify-content:space-between"><span>Cardamom coffee</span><span>14.00</span></div><div style="border-top:1px dashed rgba(15,20,34,0.4);margin:6px 0;padding-top:6px;display:flex;justify-content:space-between;font-weight:700"><span>Total · SAR</span><span>44.00</span></div></div></div><div class="cap">N° 06 · Receipt</div></div>
+    <div class="app"><div class="canvas" style="background:var(--cream)"><svg viewBox="0 0 200 240" width="78%"><path d="M 30 40 L 170 40 L 170 220 L 30 220 Z" fill="#F6ECD6" stroke="#1B2235" stroke-width="3"/><circle cx="100" cy="100" r="36" fill="#C8442C" stroke="#1B2235" stroke-width="3"/><circle cx="100" cy="100" r="14" fill="#F6ECD6"/><circle cx="102" cy="98" r="6" fill="#E6A532"/><text x="100" y="170" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="22" fill="#1B2235">SIX EGGS</text></svg></div><div class="cap">N° 01 · Egg carton</div></div>
+    <div class="app"><div class="canvas" style="background:var(--navy)"><svg viewBox="0 0 200 240" width="42%"><path d="M 80 20 L 120 20 L 120 70 L 140 110 L 140 220 L 60 220 L 60 110 L 80 70 Z" fill="#9C3520" stroke="#F6ECD6" stroke-width="2"/><rect x="62" y="120" width="76" height="80" fill="#F6ECD6"/><text x="100" y="148" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="14" fill="#9C3520">YOLK OIL</text></svg></div><div class="cap">N° 02 · Yolk-oil bottle</div></div>
+    <div class="app"><div class="canvas" style="background:var(--yolk)"><svg viewBox="0 0 200 240" width="68%"><path d="M 30 70 L 30 220 L 170 220 L 170 70 Z" fill="#F6ECD6" stroke="#1B2235" stroke-width="3"/><text x="100" y="140" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="32" fill="#1B2235">OMLT</text></svg></div><div class="cap">N° 03 · Paper bag</div></div>
+    <div class="app"><div class="canvas" style="background:var(--herb)"><svg viewBox="0 0 200 240" width="60%"><path d="M 50 30 L 150 30 L 138 220 L 62 220 Z" fill="#F6ECD6" stroke="#1B2235" stroke-width="3"/><rect x="56" y="70" width="88" height="80" fill="#C8442C"/><text x="100" y="105" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="22" fill="#F6ECD6">OMLT</text></svg></div><div class="cap">N° 04 · Cup &amp; sleeve</div></div>
+    <div class="app"><div class="canvas" style="background:var(--terra)"><div style="display:flex;gap:14px"><svg viewBox="0 0 100 100" width="80"><circle cx="50" cy="50" r="46" fill="#F6ECD6" stroke="#1B2235" stroke-width="2"/><circle cx="50" cy="46" r="14" fill="#E6A532"/></svg><svg viewBox="0 0 100 100" width="80"><circle cx="50" cy="50" r="46" fill="#1B2235" stroke="#F6ECD6" stroke-width="2"/><text x="50" y="58" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="22" fill="#F6ECD6">OMLT</text></svg></div></div><div class="cap">N° 05 · Sticker pack</div></div>
+    <div class="app"><div class="canvas" style="background:var(--cream);align-items:flex-start;padding:18px"><div style="font-family:'Space Grotesk';font-size:9px;color:var(--navy);line-height:1.7;width:100%"><div style="text-align:center;font-family:'Frank Ruhl Libre';font-weight:900;font-size:14px;margin:6px 0">OMLT</div><div style="display:flex;justify-content:space-between"><span>Classic three-egg</span><span>22.00</span></div><div style="display:flex;justify-content:space-between"><span>Sourdough · daily</span><span>8.00</span></div><div style="display:flex;justify-content:space-between"><span>Cardamom coffee</span><span>14.00</span></div><div style="border-top:1px dashed rgba(15,20,34,0.4);margin:6px 0;padding-top:6px;display:flex;justify-content:space-between;font-weight:700"><span>Total · SAR</span><span>44.00</span></div></div></div><div class="cap">N° 06 · Receipt</div></div>
   </div>
   <div class="foot"><span>CHAPTER 07 · APPLICATIONS</span><span>027 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 27 · APPLICATIONS · SIGNAGE ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">07</span><span>Applications · Signage <span class="ar">اللافتات</span></span><span>028 / 034</span></header>
   <div class="stack" style="margin-bottom:24px"><span class="kicker">Read at any distance</span><h2 class="h-2">From the corner<br>to the counter.</h2></div>
   <div class="grid g-3">
-    <div class="app"><div class="sign terra"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" alt="storefront"></div><div class="cap">Storefront · primary façade</div></div>
-    <div class="app"><div class="sign navy"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" alt="awning"></div><div class="cap">Awning · navy variant</div></div>
-    <div class="app"><div class="sign cream"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" alt="interior"></div><div class="cap">Interior · counter sign</div></div>
+    <div class="app"><div class="sign terra"><img src="omlt-logo-approved.png" alt="storefront"/></div><div class="cap">Storefront · primary façade</div></div>
+    <div class="app"><div class="sign navy"><img src="omlt-logo-approved.png" alt="awning"/></div><div class="cap">Awning · navy variant</div></div>
+    <div class="app"><div class="sign cream"><img src="omlt-logo-approved.png" alt="interior"/></div><div class="cap">Interior · counter sign</div></div>
   </div>
   <div style="margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:22px">
-    <div style="border:1px solid var(--hair);border-radius:12px;padding:32px;background:var(--cream);display:flex;align-items:center;gap:24px">
-      <div style="font-family:var(--serif);font-weight:900;font-size:64px;color:var(--terra);line-height:1">7</div>
-      <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.32em;color:var(--navy);text-transform:uppercase;font-weight:600">Open<br>Daily<br>07:00 — 15:00</div>
-    </div>
-    <div style="border:1px solid var(--hair);border-radius:12px;padding:32px;background:var(--navy);color:var(--cream);display:flex;flex-direction:column;gap:8px">
-      <div style="font-family:var(--mono);font-size:11px;letter-spacing:0.32em;color:var(--yolk);text-transform:uppercase;font-weight:600">Today</div>
-      <div style="font-family:var(--serif);font-weight:900;font-size:32px">Mushroom omelette</div>
-      <div style="font-family:var(--ar);font-size:14px;color:rgba(246,236,214,0.7)">مكوّنات طازجة — يُحضّر لحظة الطلب</div>
-    </div>
+    <div style="border:1px solid var(--hair);border-radius:12px;padding:32px;background:var(--cream);display:flex;align-items:center;gap:24px"><div style="font-family:var(--serif);font-weight:900;font-size:64px;color:var(--terra);line-height:1">7</div><div style="font-family:var(--mono);font-size:11px;letter-spacing:0.32em;color:var(--navy);text-transform:uppercase;font-weight:600">Open<br>Daily<br>07:00 — 15:00</div></div>
+    <div style="border:1px solid var(--hair);border-radius:12px;padding:32px;background:var(--navy);color:var(--cream);display:flex;flex-direction:column;gap:8px"><div style="font-family:var(--mono);font-size:11px;letter-spacing:0.32em;color:var(--yolk);text-transform:uppercase;font-weight:600">Today</div><div style="font-family:var(--serif);font-weight:900;font-size:32px">Mushroom omelette</div><div style="font-family:var(--ar);font-size:14px;color:rgba(246,236,214,0.7)">مكوّنات طازجة — يُحضّر لحظة الطلب</div></div>
   </div>
   <div class="foot"><span>CHAPTER 07 · APPLICATIONS</span><span>028 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 28 · APPLICATIONS · DIGITAL ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">07</span><span>Applications · Digital <span class="ar">التطبيقات الرقمية</span></span><span>029 / 034</span></header>
   <div class="stack" style="margin-bottom:24px"><span class="kicker">Same brand, smaller surface</span><h2 class="h-2">Web · Instagram · Maps.</h2></div>
   <div class="grid g-3" style="gap:22px;align-items:start">
-    <div class="app"><div class="device" style="aspect-ratio:9/16"><div class="bar"><span></span><span></span><span></span></div><div class="scr"><div style="background:var(--terra);height:90px;border-radius:6px;display:flex;align-items:center;justify-content:center"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="width:56px;height:auto"></div><h5>Mushroom omelette</h5><p>فطر طازج · بيض مخفوق · خبز اليوم</p><div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--hair);padding-top:8px"><span style="font-family:var(--mono);font-size:10px;color:var(--terra);font-weight:700">38 SAR</span><span style="font-family:var(--mono);font-size:9px;color:rgba(15,20,34,0.55)">Order →</span></div></div></div><div class="cap">Web · product card</div></div>
-    <div class="app"><div class="device" style="aspect-ratio:9/16;background:#fff"><div class="bar"><span></span><span></span><span></span></div><div class="scr" style="padding:0"><div style="background:var(--terra);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="width:62%"></div><div style="padding:14px"><div style="font-family:var(--mono);font-size:9px;letter-spacing:0.3em;color:var(--terra);font-weight:700">OMLT · BREAKFAST KITCHEN</div><div style="font-family:var(--ar);font-size:11px;color:rgba(15,20,34,0.7);margin-top:6px">٧:٠٠ — ٣:٠٠ · أبها</div></div></div></div><div class="cap">Instagram · grid post</div></div>
-    <div class="app"><div class="device" style="aspect-ratio:9/16"><div class="bar"><span></span><span></span><span></span></div><div class="scr" style="background:#E8E0CC;padding:0;position:relative"><div style="position:absolute;inset:18px 18px auto 18px;background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.12)"><div style="display:flex;gap:10px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:var(--terra);display:flex;align-items:center;justify-content:center"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" style="width:24px;height:24px"></div><div><div style="font-family:var(--serif);font-weight:700;font-size:14px;color:var(--navy)">OMLT</div><div style="font-family:var(--mono);font-size:9px;color:rgba(15,20,34,0.55)">★ 4.9 · Breakfast</div></div></div></div><div style="position:absolute;top:50%;left:50%;width:14px;height:14px;background:var(--terra);border-radius:50% 50% 50% 0;transform:translate(-50%,-100%) rotate(-45deg);box-shadow:0 4px 12px rgba(200,68,44,0.5)"></div></div></div><div class="cap">Maps · location pin</div></div>
+    <div class="app"><div class="device" style="aspect-ratio:9/16"><div class="bar"><span></span><span></span><span></span></div><div class="scr"><div style="background:var(--terra);height:90px;border-radius:6px;display:flex;align-items:center;justify-content:center"><img src="omlt-logo-approved.png" style="width:56px;height:auto"/></div><h5>Mushroom omelette</h5><p>فطر طازج · بيض مخفوق · خبز اليوم</p><div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--hair);padding-top:8px"><span style="font-family:var(--mono);font-size:10px;color:var(--terra);font-weight:700">38 SAR</span><span style="font-family:var(--mono);font-size:9px;color:rgba(15,20,34,0.55)">Order →</span></div></div></div><div class="cap">Web · product card</div></div>
+    <div class="app"><div class="device" style="aspect-ratio:9/16;background:#fff"><div class="bar"><span></span><span></span><span></span></div><div class="scr" style="padding:0"><div style="background:var(--terra);aspect-ratio:1/1;display:flex;align-items:center;justify-content:center"><img src="omlt-logo-approved.png" style="width:62%"/></div><div style="padding:14px"><div style="font-family:var(--mono);font-size:9px;letter-spacing:0.3em;color:var(--terra);font-weight:700">OMLT · BREAKFAST KITCHEN</div><div style="font-family:var(--ar);font-size:11px;color:rgba(15,20,34,0.7);margin-top:6px">٧:٠٠ — ٣:٠٠ · أبها</div></div></div></div><div class="cap">Instagram · grid post</div></div>
+    <div class="app"><div class="device" style="aspect-ratio:9/16"><div class="bar"><span></span><span></span><span></span></div><div class="scr" style="background:#E8E0CC;padding:0;position:relative"><div style="position:absolute;inset:18px 18px auto 18px;background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.12)"><div style="display:flex;gap:10px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:var(--terra);display:flex;align-items:center;justify-content:center"><img src="omlt-logo-approved.png" style="width:24px;height:24px"/></div><div><div style="font-family:var(--serif);font-weight:700;font-size:14px;color:var(--navy)">OMLT</div><div style="font-family:var(--mono);font-size:9px;color:rgba(15,20,34,0.55)">★ 4.9 · Breakfast</div></div></div></div></div></div><div class="cap">Maps · location pin</div></div>
   </div>
   <div class="foot"><span>CHAPTER 07 · APPLICATIONS</span><span>029 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 29 · APPLICATIONS · APPAREL & MERCH ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">07</span><span>Applications · Apparel &amp; Merch <span class="ar">الزي والمنتجات</span></span><span>030 / 034</span></header>
-  <div class="stack" style="margin-bottom:24px"><span class="kicker">The kitchen wears it</span><h2 class="h-2">Apron · Tee · Cap · Tote.</h2></div>
+  <div class="stack" style="margin-bottom:24px"><span class="kicker">The kitchen wears it</span><h2 class="h-2">Apron · Tee · Cap.</h2></div>
   <div class="apparel-grid">
-    <div><div class="apparel tee"><svg viewBox="0 0 200 240" width="68%"><path d="M 40 60 L 70 30 L 130 30 L 160 60 L 140 90 L 140 220 L 60 220 L 60 90 L 40 60 Z" fill="#F6ECD6" stroke="#1B2235" stroke-width="3"></path><circle cx="100" cy="130" r="22" fill="#C8442C"></circle><circle cx="100" cy="124" r="8" fill="#F6ECD6"></circle><circle cx="101" cy="123" r="3" fill="#E6A532"></circle></svg></div><div class="cap" style="margin-top:10px">Crew Tee · cream</div></div>
-    <div><div class="apparel apron"><svg viewBox="0 0 200 240" width="68%"><path d="M 60 40 L 60 30 L 140 30 L 140 40 L 170 60 L 170 220 L 30 220 L 30 60 Z" fill="#1B2235" stroke="#F6ECD6" stroke-width="3"></path><text x="100" y="160" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="44" fill="#F6ECD6">OMLT</text><circle cx="100" cy="100" r="14" fill="#E6A532"></circle></svg></div><div class="cap" style="margin-top:10px">Apron · navy chef line</div></div>
-    <div><div class="apparel cap"><svg viewBox="0 0 200 240" width="72%"><path d="M 30 140 C 30 80, 170 80, 170 140 L 180 160 L 20 160 Z" fill="#C8442C" stroke="#F6ECD6" stroke-width="3"></path><text x="100" y="125" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="26" fill="#F6ECD6">OMLT</text></svg></div><div class="cap" style="margin-top:10px">Cap · terracotta crown</div></div>
+    <div><div class="apparel tee"><svg viewBox="0 0 200 240" width="68%"><path d="M 40 60 L 70 30 L 130 30 L 160 60 L 140 90 L 140 220 L 60 220 L 60 90 L 40 60 Z" fill="#F6ECD6" stroke="#1B2235" stroke-width="3"/><circle cx="100" cy="130" r="22" fill="#C8442C"/><circle cx="100" cy="124" r="8" fill="#F6ECD6"/><circle cx="101" cy="123" r="3" fill="#E6A532"/></svg></div><div class="cap" style="margin-top:10px">Crew Tee · cream</div></div>
+    <div><div class="apparel apron"><svg viewBox="0 0 200 240" width="68%"><path d="M 60 40 L 60 30 L 140 30 L 140 40 L 170 60 L 170 220 L 30 220 L 30 60 Z" fill="#1B2235" stroke="#F6ECD6" stroke-width="3"/><text x="100" y="160" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="44" fill="#F6ECD6">OMLT</text><circle cx="100" cy="100" r="14" fill="#E6A532"/></svg></div><div class="cap" style="margin-top:10px">Apron · navy chef line</div></div>
+    <div><div class="apparel cap"><svg viewBox="0 0 200 240" width="72%"><path d="M 30 140 C 30 80, 170 80, 170 140 L 180 160 L 20 160 Z" fill="#C8442C" stroke="#F6ECD6" stroke-width="3"/><text x="100" y="125" text-anchor="middle" font-family="Frank Ruhl Libre" font-weight="900" font-size="26" fill="#F6ECD6">OMLT</text></svg></div><div class="cap" style="margin-top:10px">Cap · terracotta crown</div></div>
   </div>
   <div style="margin-top:24px;padding:18px 22px;background:var(--cream);border:1px solid var(--hair);border-radius:12px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap"><span class="label">Merch principles</span><span style="font-family:var(--ar);font-size:13px;color:var(--navy)">قابل للارتداء يوميًا · لا شعارات كبيرة · جودة قبل الكمية</span></div>
   <div class="foot"><span>CHAPTER 07 · APPLICATIONS</span><span>030 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 30 · BRAND VOICE · VISUAL PERSONALITY ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">08</span><span>Brand Voice · Personality <span class="ar">شخصية العلامة</span></span><span>031 / 034</span></header>
   <div class="stack" style="margin-bottom:28px"><span class="kicker">Brand personality</span><h2 class="h-2">Warm · Clear · Brief · <em>Signed.</em></h2></div>
@@ -978,9 +787,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 08 · BRAND VOICE</span><span>031 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 31 · BRAND VOICE · SENSORY ═════════════════ -->
-
-<!-- ═════════════════ 31 · BRAND VOICE · SENSORY ═════════════════ -->
 <section class="page dark">
   <header class="head"><span class="num">08</span><span>Brand Voice · Sensory <span class="ar">الهوية الحسّية</span></span><span>032 / 034</span></header>
   <div class="stack" style="margin-bottom:28px"><span class="kicker">Four sensory gates</span><h2 class="h-1" style="color:var(--cream)">Sight · Smell ·<br>Touch · <em>Warmth.</em></h2></div>
@@ -993,7 +799,6 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 08 · BRAND VOICE</span><span>032 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 32 · BRAND VOICE · AUDIO ═════════════════ -->
 <section class="page">
   <header class="head"><span class="num">08</span><span>Brand Voice · Audio <span class="ar">الهوية الصوتية</span></span><span>033 / 034</span></header>
   <div class="grid g-12-6" style="gap:48px;align-items:center">
@@ -1014,11 +819,10 @@ em{font-style:italic;color:var(--terra)}
   <div class="foot"><span>CHAPTER 08 · BRAND VOICE</span><span>033 · 034</span></div>
 </section>
 
-<!-- ═════════════════ 33 · CLOSING ═════════════════ -->
 <section class="page dark">
   <header class="head"><span class="num" style="color:var(--yolk)">·</span><span>End of archive <span class="ar">ختام الأرشيف</span></span><span>034 / 034</span></header>
   <div class="closing">
-    <div class="closing-mark"><img src="./OMLT-Master-Presentation_files/omlt-logo-approved.png" alt="OMLT"></div>
+    <div class="closing-mark"><img src="omlt-logo-approved.png" alt="OMLT"/></div>
     <span class="kicker">The OMLT promise</span>
     <h2 class="h-display" style="color:var(--cream);text-align:center;max-width:18ch">A clear<br>and <em>simple</em><br>morning.</h2>
     <p style="font-family:var(--ar);font-weight:700;font-size:24px;color:var(--cream)">بداية صباح واضحة وبسيطة.</p>
@@ -1047,6 +851,5 @@ em{font-style:italic;color:var(--terra)}
     }
   });
 </script>
-
-
-</body></html>
+</body>
+</html>
