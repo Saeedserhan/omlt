@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>OMLT — Master Archive · V 2.0</title>
 <meta name="description" content="OMLT — Master Archive. Brand, business and identity. Abha, Saudi Arabia." />
 
@@ -23,38 +23,6 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--paper);color:var(--ink);font-family:var(--ar);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
 body{padding:0;min-height:100vh}
-  html,body{
-overflow-x:hidden;
-max-width:100%;
-}
-
-img{
-max-width:100%;
-height:auto;
-}
-
-@media (max-width:768px){
-
-html,body{
-overflow-x:hidden;
-margin:0;
-padding:0;
-}
-
-.deck{
-width:1180px;
-transform-origin:top center;
-transform:scale(calc(100vw / 1180));
-margin:0 auto;
-height:auto;
-}
-
-.page{
-width:1180px;
-min-width:1180px;
-}
-
-}
 .deck{display:block}
 .page{width:100%;height:auto;background:var(--paper);color:var(--ink);
   position:relative;overflow:visible;
@@ -64,17 +32,8 @@ min-width:1180px;
 .page.dark{background:var(--navy);color:var(--cream)}
 .page.terra{background:var(--terra);color:var(--cream)}
 .page.cream{background:var(--cream);color:var(--navy)}
-.page + .page::before{
-content:"";
-position:absolute;
-top:0;
-left:50%;
-transform:translateX(-50%);
-width:100%;
-max-width:100%;
-height:1px;
-background:var(--hair);
-}
+.page + .page::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:min(calc(100vw - 144px), var(--frame));height:1px;background:var(--hair)}
 .page.dark::before,.page.terra::before,.page.cream::before,
 .page.dark + .page::before,.page.terra + .page::before,.page.cream + .page::before{display:none}
 .head{display:flex;align-items:baseline;justify-content:space-between;
@@ -261,19 +220,150 @@ em{font-style:italic;color:var(--terra)}
   .icon-grid{grid-template-columns:repeat(4,1fr)}
 }
 @media print{
-  html,body{background:#fff !important}body{padding:0}.toolbar{display:none}.deck{display:block}
-  .page{width:100%;min-height:100vh;padding:48px 56px;page-break-after:always;break-after:page;break-inside:avoid}
-  .page::before{display:none !important}.cover{min-height:100vh}.cover-inner{min-height:100vh;padding:48px 64px}.foot{margin-top:auto;padding-top:18px}
+  *{box-sizing:border-box !important}
+  html,body{background:#fff !important;margin:0 !important;padding:0 !important}
+  .toolbar{display:none !important}
+  .deck{display:block !important}
+  /* Each .page = exactly one A4 landscape page. Lock width AND height to viewport. */
+  .page{
+    width:100vw !important;height:100vh !important;min-height:100vh !important;max-height:100vh !important;
+    padding:38pt 46pt 30pt 46pt !important;
+    page-break-after:always !important;break-after:page !important;
+    page-break-inside:avoid !important;break-inside:avoid !important;
+    overflow:hidden !important;
+    display:block !important;position:relative !important;
+  }
+  .page::before{display:none !important}
+  .cover{padding:0 !important}
+  .cover-inner{
+    width:100vw !important;height:100vh !important;min-height:100vh !important;max-height:100vh !important;
+    padding:38pt 50pt !important;box-sizing:border-box !important;
+  }
+  .foot{
+    position:absolute !important;left:46pt !important;right:46pt !important;bottom:22pt !important;
+    margin:0 !important;padding-top:8pt !important;
+  }
+  /* Compact print typography — fit native HTML content into one A4 landscape per page */
+  .head{margin-bottom:24pt !important;font-size:8pt !important}
+  .cover-wordmark{font-size:140pt !important;line-height:0.86 !important}
+  .cover-title{font-size:34pt !important;line-height:0.96 !important}
+  .cover-ar{font-size:17pt !important}.cover-sub{font-size:10pt !important}
+  .h-display{font-size:48pt !important;line-height:0.96 !important}
+  .h-1{font-size:30pt !important;line-height:1 !important}
+  .h-2{font-size:22pt !important;line-height:1.05 !important}
+  .h-3{font-size:16pt !important}
+  .lead{font-size:11.5pt !important;line-height:1.55 !important}
+  .body{font-size:10.5pt !important}.kicker{font-size:8.5pt !important}
+  .card{padding:11pt !important;gap:6pt !important}
+  .card h4{font-size:12.5pt !important;line-height:1.18 !important}
+  .card p{font-size:10pt !important;line-height:1.5 !important}
+  .card .ic{width:30pt !important;height:30pt !important}
+  .card .ic svg{width:17pt !important;height:17pt !important}
+  .pillar{padding:12pt !important;gap:6pt !important}
+  .pillar h5{font-size:12pt !important}
+  .pillar p{font-size:9.5pt !important;line-height:1.5 !important}
+  .pillar .ic{width:30pt !important;height:30pt !important;font-size:10pt !important}
+  .tbl th,.tbl td{padding:6pt 9pt !important;font-size:10pt !important}
+  .tbl .role{font-size:11pt !important}
+  .tbl .en,.tbl .body,.tbl .sar{font-size:9.5pt !important}
+  .swatch{padding:11pt !important}.swatch .ratio{font-size:16pt !important}.swatch .nm{font-size:12.5pt !important}
+  .toc li{padding:7pt 0 !important}.toc .t{font-size:14pt !important}
+  .manifesto-quote{font-size:28pt !important;line-height:1.22 !important}
+  .manifesto-mark{font-size:80pt !important;height:30pt !important}
+  .specimen .big{font-size:42pt !important}
+  .specimen .big-grotesk{font-size:32pt !important}
+  .specimen .big-ar{font-size:38pt !important}
+  .icn-cell{padding:5pt !important}
+  .icn-cell svg{width:20pt !important;height:20pt !important}
+  .icn-cell .nm{font-size:7pt !important}
+  .grid{gap:11pt !important}
+  /* Allow grid cells to wrap content instead of expanding past parent */
+  .grid.g-3{grid-template-columns:repeat(3,minmax(0,1fr)) !important}
+  .grid.g-4{grid-template-columns:repeat(4,minmax(0,1fr)) !important}
+  .grid.g-2{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+  .grid.g-12-6{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important}
+  .grid.g-12-5-7{grid-template-columns:minmax(0,5fr) minmax(0,7fr) !important}
+  .grid.g-12-7-5{grid-template-columns:minmax(0,7fr) minmax(0,5fr) !important}
+  .card,.pillar,.lr-cell,.swatch,.icn-cell,.pat,.app,.fp-stat{min-width:0 !important}
+  .card h4,.card p,.pillar h5,.pillar p,.lead,.toc .t{overflow-wrap:break-word !important}
+  /* Floor plan — fit on one page */
+  .fp-board{padding:10pt 14pt !important}
+  .fp-frame{padding:8pt !important;text-align:center !important}
+  .fp-frame img{width:auto !important;max-width:62% !important;height:240pt !important;max-height:240pt !important;display:block !important;margin:0 auto !important}
+  .fp-meta-row{margin-top:6pt !important;padding-top:5pt !important;font-size:7.5pt !important}
+  .fp-stats{gap:8pt !important;margin-top:10pt !important}
+  .fp-stat{padding:8pt !important}.fp-stat .v{font-size:16pt !important}
+  .fp-stat .s{font-size:9pt !important}.fp-stat .k{font-size:8pt !important}
+  /* Logo hero */
+  .logo-hero{gap:32pt !important}.logo-hero .stage{padding:32pt !important}
+  /* Anatomy */
+  .anatomy .stage-lg{min-height:280pt !important;padding:22pt !important}
+  /* Apps */
+  .app .canvas{aspect-ratio:4/3 !important;padding:10pt !important}
+  .sign{aspect-ratio:5/4 !important}
+  .stack>*+*,.stack-lg>*+*{margin-top:8pt !important}
+  /* === FLOOR PLAN PAGE — strict tightening so all stats + foot fit on one A4 === */
+  .page:has(.fp-board){padding:22pt 40pt 26pt 40pt !important}
+  .page:has(.fp-board) .head{margin-bottom:8pt !important}
+  .page:has(.fp-board) .stack{margin-bottom:6pt !important}
+  .page:has(.fp-board) .stack > * + *{margin-top:3pt !important}
+  .page:has(.fp-board) .kicker{font-size:7.5pt !important}
+  .page:has(.fp-board) .h-1{font-size:18pt !important;line-height:1.02 !important}
+  .page:has(.fp-board) .h-1 br{display:none !important}
+  .page:has(.fp-board) .lead{font-size:9pt !important;line-height:1.35 !important;margin-top:2pt !important}
+  .page:has(.fp-board) .lead br{display:none !important}
+  .page:has(.fp-board) .lead span{font-size:8.5pt !important}
+  .page:has(.fp-board) .rule-tiny{margin:2pt 0 !important;height:1.5pt !important}
+  .page:has(.fp-board) .foot{bottom:14pt !important;padding-top:5pt !important;font-size:7.5pt !important}
+  .fp-board{padding:7pt 10pt !important;margin-top:2pt !important;border-radius:8pt !important}
+  .fp-corner{width:18pt !important;height:18pt !important}
+  .fp-frame{padding:6pt !important;text-align:center !important;border-radius:6pt !important}
+  .fp-frame img{width:auto !important;max-width:82% !important;height:255pt !important;max-height:255pt !important;display:block !important;margin:0 auto !important}
+  .fp-meta-row{margin-top:4pt !important;padding-top:3pt !important;font-size:6pt !important;letter-spacing:0.2em !important;gap:6pt !important}
+  .fp-stats{gap:6pt !important;margin-top:6pt !important;grid-template-columns:repeat(4,minmax(0,1fr)) !important}
+  .fp-stat{padding:5pt 7pt !important;border-radius:6pt !important}
+  .fp-stat .k{font-size:6pt !important;letter-spacing:0.28em !important}
+  .fp-stat .v{font-size:11pt !important;margin-top:2pt !important;line-height:1 !important}
+  .fp-stat .s{font-size:7pt !important;margin-top:2pt !important;line-height:1.3 !important}
+  /* === PAGE 18 · THE MARK · HERO (logo-hero) === */
+  .logo-hero{grid-template-columns:1fr 1fr !important;gap:24pt !important;align-items:center !important}
+  .logo-hero .stage{aspect-ratio:auto !important;width:auto !important;height:330pt !important;max-height:330pt !important;padding:24pt !important}
+  .logo-hero .stage img{width:auto !important;max-width:80% !important;height:240pt !important;max-height:240pt !important}
+  /* === PAGE 19 · ANATOMY === */
+  .anatomy{grid-template-columns:1fr 1fr !important;gap:24pt !important;align-items:center !important}
+  .anatomy .stage-lg{min-height:0 !important;height:330pt !important;max-height:330pt !important;padding:18pt !important}
+  .anatomy .stage-lg img{width:auto !important;max-width:80% !important;height:260pt !important;max-height:260pt !important}
+  .anno{font-size:7pt !important;padding:3pt 6pt !important}
+  /* === PAGE 26 · ICONS & PATTERN === */
+  .icon-grid{gap:8pt !important}
+  .icon-grid .icn-cell{padding:4pt !important;aspect-ratio:auto !important;height:50pt !important}
+  .icon-grid .icn-cell svg{width:18pt !important;height:18pt !important}
+  .icon-grid .icn-cell .nm{font-size:6pt !important;letter-spacing:0.18em !important}
+  .pat-row{gap:11pt !important;margin-top:14pt !important}
+  .pat-canvas{aspect-ratio:auto !important;height:90pt !important}
+  .pat-cap{font-size:8pt !important}
+  /* === PAGE 27 · PACKAGING === */
+  .app-grid{gap:11pt !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important}
+  .app-grid .app .canvas{aspect-ratio:auto !important;height:135pt !important;padding:8pt !important}
+  .app-grid .app .canvas svg{max-height:115pt !important;width:auto !important;height:auto !important}
+  .app-grid .app .cap{font-size:8pt !important;margin-top:4pt !important}
+  /* === PAGE 28 · SIGNAGE === */
+  .sign{aspect-ratio:auto !important;height:140pt !important;display:flex !important;align-items:center !important;justify-content:center !important;padding:14pt !important}
+  .sign img{width:auto !important;height:100pt !important;max-width:100pt !important;max-height:100pt !important;object-fit:contain !important;display:block !important}
+  /* === PAGE 29 · DIGITAL (device mockups) === */
+  .device{aspect-ratio:auto !important;height:280pt !important}
+  .device .scr{padding:11pt !important;gap:6pt !important}
+  .device .scr h5{font-size:11pt !important}
+  .device .scr p{font-size:8pt !important;line-height:1.45 !important}
+  /* === PAGE 30 · APPAREL === */
+  .apparel-grid{gap:14pt !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important}
+  .apparel{aspect-ratio:auto !important;height:230pt !important}
+  .apparel svg{max-height:175pt !important;width:auto !important}
 }
 @page{size:A4 landscape;margin:0}
 </style>
 </head>
 <body>
-
-<div class="toolbar">
-  <span class="pill">OMLT · Master Archive · V 2.0</span>
-  <button onclick="window.print()">Export PDF</button>
-</div>
 
 <main class="deck">
 
@@ -437,14 +527,14 @@ em{font-style:italic;color:var(--terra)}
     <span class="kicker">Architecture · Layout</span>
     <h2 class="h-1">OMLT Floor Plan<br><em>Layout.</em></h2>
     <span class="rule-tiny"></span>
-    <p class="lead">Customer flow, operational efficiency and live cooking experience.<br><span style="font-family:var(--ar);font-size:15px;color:rgba(15,20,34,0.62)">مخطط معماري معتمد — تدفّق العميل، كفاءة التشغيل، وتجربة الطهي المباشر.</span></p>
+    <p class="lead">Customer flow, operational efficiency and live cooking experience.<br><span style="font-family:var(--ar);font-size:15px;color:rgba(15,20,34,0.62)">مقترح — تدفّق العميل، كفاءة التشغيل، وتجربة الطهي المباشر.</span></p>
   </div>
   <div class="fp-board">
     <div class="fp-grid"></div>
     <span class="fp-corner tl"></span><span class="fp-corner tr"></span>
     <span class="fp-corner bl"></span><span class="fp-corner br"></span>
     <div class="fp-frame">
-      <img src="omlt-floor-plan.png" alt="OMLT — approved floor plan"/>
+      <img src="omlt-floor-plan.png" alt="OMLT — floor plan proposal"/>
       <div class="fp-meta-row">
         <span>Drawing No. · A-01</span>
         <div class="scale"><span>SCALE</span><span class="scale-bar"></span><span>1 : 100</span></div>
@@ -612,7 +702,6 @@ em{font-style:italic;color:var(--terra)}
       <span class="rule-tiny"></span>
       <p class="lead">شارة دائرية تحوي رمز البيضة في المنتصف، نصًّا مُقوَّسًا حول الأعلى، واسم العلامة OMLT في الأسفل. اعتُمدت رسميًّا كهوية وحيدة للمشروع.</p>
       <div style="display:flex;gap:32px;margin-top:8px">
-        <div><span class="kicker">File</span><div style="font-family:var(--mono);color:var(--navy);font-size:13px;letter-spacing:0.18em;margin-top:6px">OMLT-Logo-Layered-HiRes</div></div>
         <div><span class="kicker">Status</span><div style="font-family:var(--mono);color:var(--navy);font-size:13px;letter-spacing:0.18em;margin-top:6px">APPROVED · FINAL</div></div>
       </div>
     </div>
@@ -894,3 +983,4 @@ em{font-style:italic;color:var(--terra)}
 </script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
